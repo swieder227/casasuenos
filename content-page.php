@@ -21,7 +21,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	<!--footer class="entry-footer">
 		<?php edit_post_link( __( 'Edit', 'casasuenos' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-footer -->
+	</footer--><!-- .entry-footer -->
 </article><!-- #post-## -->

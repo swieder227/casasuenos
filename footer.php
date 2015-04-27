@@ -12,7 +12,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<ul>
+			<ul class="clear">
 				<li>CASA de los Sueños</li>
 				<li>Isla Mujeres, Mexico</li>
 				<li>US Toll free 877-372-3993</li>

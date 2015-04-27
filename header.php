@@ -29,8 +29,15 @@
 				</a>
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php _e( 'Menu', 'casasuenos' ); ?></button>
+				<!-- Hamburger -->
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="menu"><div></div>
+				<div></div>
+				<div></div></button>
+				<!-- Main Menu -->
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<!-- Additional Buttons -->
+				<div class="header-btn-extra header-btn-reservations font-sacramento"><a href="#">reservations</a></div>
+				<div class="header-btn-extra header-btn-rooms font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
