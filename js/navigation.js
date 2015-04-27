@@ -79,3 +79,123 @@
 		}
 	}
 } )();
+
+/*
+* Handles the #stickynav logic
+* * On scroll, if scrollY > offset then show
+*/
+(function(window){
+
+	/*
+	* Constructor
+	*/
+	var Stickynav = function(elem){
+
+		// DOM Element
+		this.elem = elem;
+		// child btn DOM element
+		this.btn = elem.querySelectorAll(".menu-toggle-sticky")[0];
+		this.nav = elem.querySelectorAll(".main-navigation-sticky")[0];
+
+		// Initial State
+		this.visible = false;
+
+		// height to compare if we should show/hide
+		this.scrollOffset = document.querySelector("#masthead").offsetHeight + 100;
+
+		// Self Init
+		this.init();
+	}
+
+	/*
+	* Prototype Methods
+	*/
+	Stickynav.prototype = {
+
+		constructor: Stickynav,
+
+		init: function() {
+			// add throttled scroll listener
+			window.addEventListener("scroll", _throttle(this.update.bind(this), 250));
+			// btn to toggle open/close
+			this.btn.addEventListener("click", this.toggle.bind(this));
+			// close when we tap menu
+			this.nav.addEventListener("click", this.close.bind(this));
+		},
+
+		update: function() {
+			if(_getScrollY() < this.scrollOffset)
+				this.unstick()
+			else
+				this.stick();
+		},
+
+		stick: function() {
+			if(!this.visible)
+				this.elem.className += " show-sticky";
+			this.visible = true;
+		},
+
+		unstick: function() {
+			if(this.visible)
+				this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "show-sticky|toggled" + '(\\s|$)*', 'g'), '');
+			this.visible = false;
+		},
+
+		toggle: function() {
+			if(this.elem.className.indexOf("toggled") >= 0)
+				this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
+			else
+				this.elem.className += " toggled";
+		},
+
+		close: function() {
+			this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
+		}
+
+	}
+
+	/*
+	* Helper functions
+	*/
+
+	// Get current Y position
+	var _getScrollY = function() {
+	    return (window.pageYOffset !== undefined) ?
+	            window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+	};
+
+	// throttle, or reduce rapid consecutive calls. used to increase performance
+	// Borrowed from Underscore.js
+	var _throttle = function(func, wait) {
+	    var _now =  Date.now || function() { return new Date().getTime(); };
+	    var context, args, result;
+	    var timeout = null;
+	    var previous = 0;
+	    var later = function() {
+	      previous = _now();
+	      timeout = null;
+	      result = func.apply(context, args);
+	      context = args = null;
+	    };
+	    return function() {
+	        var now = _now();
+	        var remaining = wait - (now - previous);
+	        context = this;
+	        args = arguments;
+	        if (remaining <= 0) {
+	            clearTimeout(timeout);
+	            timeout = null;
+	            previous = now;
+	            result = func.apply(context, args);
+	            context = args = null;
+	        } else if (!timeout) {
+	            timeout = setTimeout(later, remaining);
+	        }
+	        return result;
+	    };
+	};
+
+	var stickynav = new Stickynav(document.getElementById("stickyhead"));
+
+})(window);

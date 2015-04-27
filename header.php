@@ -30,16 +30,31 @@
 			</div><!-- .site-branding -->
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<!-- Hamburger -->
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="menu"><div></div>
-				<div></div>
-				<div></div></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="menu">
+					<div></div>
+					<div></div>
+					<div></div>
+				</button>
 				<!-- Main Menu -->
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<!-- Additional Buttons -->
-				<div class="header-btn-extra header-btn-reservations font-sacramento"><a href="#">reservations</a></div>
-				<div class="header-btn-extra header-btn-rooms font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
+				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="#">reservations</a></div>
+				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
+
+	<div id="stickyhead">
+		<button class="menu-toggle menu-toggle-sticky">
+			<div></div>
+			<div></div>
+			<div></div>
+		</button>
+		<div class="main-navigation main-navigation-sticky">
+			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="#">reservations</a></div>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-sticky' ) ); ?>
+		</div>
+	</div>
+	<!-- #stickyhead -->
 
 	<div id="content" class="site-content">
