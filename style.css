@@ -45,6 +45,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Page Components
+	## page-topimg
+	## border-wave
+	## dash-sides
+	## btn-cta
+	## header-reserve-now
 # Casa Row/Col
 # Homepage-Specific
 # Rooms-Specific
@@ -273,7 +278,6 @@ th {
 	font-style: normal;
 	font-weight: 400;
 	src: local('Montserrat'), local("Montserrat-Regular"), url(fonts/montserrat/Montserrat-Regular.otf) format(opentype);
-
 }
 @font-face{
 	font-family: "Montserrat";
@@ -286,6 +290,11 @@ th {
 	font-style: normal;
 	font-weight: 100;
 	src: local('Montserrat Hairline'), local("Montserrat-Hairline"), url(fonts/montserrat/Montserrat-Hairline.otf) format(opentype);
+}
+@font-face{
+	font-family: "Montserrat";
+	font-weight: bold;
+	src: local('Montserrat Bold'), local("Montserrat-Bold"), url(fonts/montserrat/Montserrat-Bold.otf) format(opentype);
 }
 
 body,
@@ -379,6 +388,13 @@ ins {
 
 big {
 	font-size: 125%;
+}
+
+.body-text{
+	color: #092e6e;
+	font-size: 1.1em;
+	font-weight: 200;
+	line-height: 1.6em;
 }
 
 .font-sacramento{
@@ -664,7 +680,7 @@ a:active {
 .main-navigation a {
 	display: block;
 	text-decoration: none;
-	letter-spacing: 1.5px;
+	letter-spacing: 0.4px;
 	color: white;
 }
 .main-navigation a:hover{
@@ -1000,10 +1016,22 @@ a:active {
 	width: 100%;
 	padding: 1em;
 	text-align: center;
-	font-size: 16px;
+}
+
+#primary-menu-sticky li{
+	font-size: 20px;
 }
 .sticky-btn-reservations {
-	font-size: 26px;
+	font-size: 40px;
+}
+
+@media screen and (max-width: 600px) {
+	#primary-menu-sticky li{
+		font-size: 16px;
+	}
+	.sticky-btn-reservations {
+		font-size: 30px;
+	}
 }
 
 #primary-menu-sticky li a:before,
@@ -1300,8 +1328,10 @@ object {
 	# Page Components
 ------------------------------------------------------------*/
 
-/* "Beauty" image ontop of each page, underneath nav */
+/* ## page-topimg : "Beauty" image ontop of each page, underneath nav */
 .page-topimg{
+	position: relative;
+	z-index: 5000;
 	background: rgb(161, 202, 228);
 	background-position: center center;
 	background-size: cover;
@@ -1312,7 +1342,7 @@ object {
 .page-topimg{	background-image: url(imgs/header_bg.jpg); }
 .page-topimg--rooms{	background-image: url(imgs/bg_home_2.jpg); }
 
-/* Border Wave is a white horizontal separator with wavy top+bottom */
+/* ## border-wave : Border Wave is a white horizontal separator with wavy top+bottom */
 .border-wave{
 	position: relative;
 	height: 2em;
@@ -1340,7 +1370,7 @@ object {
 	background-image: url(imgs/border_wave_bot.png);
 }
 
-/* An element with inline em-dash's on both sides */
+/* ## dash-sides : An element with inline em-dash's on both sides */
 .dash-sides:before{
 	content: '\2014\A0';
 	display: inline-block;
@@ -1358,12 +1388,47 @@ object {
 	color: white;
 }
 
-/* Teal text-based button with dashes */
+/* ## btn-cta Teal text-based button with dashes */
 .btn-cta {
 	color: #0abfdc;
 	text-transform: uppercase;
 	font-weight: bold;
 	cursor:pointer;
+}
+
+/* ## header-reserve-now : large Reserve Now text/button */
+.header-reserve-now{
+	position: relative;
+	font-size: 60px;
+	font-family: "Sacramento";
+	text-align: center;
+	line-height: 1em;
+	margin: 1em 0 0.8em 0;
+}
+.header-reserve-now a,
+.header-reserve-now a:hover,
+.header-reserve-now a:focus,
+.header-reserve-now a:active {
+	color: white;
+}
+.header-reserve-now a{ text-decoration: none }
+
+.header-reserve-now:before,
+.header-reserve-now:after {
+	content: '\2014';
+	position: absolute;
+	height: 100%;
+	top:25%;
+}
+.header-reserve-now:before{
+	left: 10%;
+	left: -webkit-calc(50% - 2em);
+	left: calc(50% - 2em);
+}
+.header-reserve-now:after{
+	right: 10%;
+	right: -webkit-calc(50% - 2em);
+	right: calc(50% - 2em);
 }
 
 /*----------------------------------------------------------
@@ -1433,6 +1498,7 @@ object {
 @media screen and (max-width: 700px) {
 	.casa-col--text{
 		width: 100%;
+		min-width: 0;
 	}
 }
 
@@ -1467,6 +1533,17 @@ object {
 #room-5 .casa-col--bg{ background-image: url(imgs/rooms_econking.jpg); }
 #room-6 .casa-col--bg{ background-image: url(imgs/rooms_econdouble.jpg); }
 
+#rooms-accent .casa-col--bg {
+	background-image: url(imgs/pattern_yellowstar.png);
+  background-size: contain;
+  right: 0 !important;
+  left: auto !important;
+  top: -4em;
+  width: 30% !important;
+  height: 120%;
+  opacity: 0.8;
+}
+#rooms-accent { z-index: 1001 }
 
 
 /*--------------------------------------------------------------
@@ -1474,6 +1551,7 @@ object {
 		Rules specific to home page
 --------------------------------------------------------------*/
 .home-header2{
+	font-weight: normal;
 	text-align: center;
 }
 #home-welcome .home-header2{
@@ -1518,9 +1596,18 @@ object {
 }
 
 .room-content .casa-col--text {
-	padding-top: 0;
-	padding-bottom: 0;
-	padding-right: 1em;
+	padding: 0 2em 6em 2em;
+	min-height: 300px;
+}
+@media screen and (max-width: 900px) {
+	.room-content .casa-col--text {
+		padding: 0 0.5em 6em 0.5em;
+	}
+}
+@media screen and (max-width: 300px) {
+	.room-content .casa-col--text {
+		padding-bottom: 8em;
+	}
 }
 
 .room-title {
@@ -1528,18 +1615,31 @@ object {
 	font-size: 2em;
 	font-weight: 200;
 	margin: 0;
-	/*margin-top: -0.15em;*/
+	margin-top: -0.15em;
+}
+@media screen and (max-width: 900px) {
+	.room-title{
+		margin-top: 0;
+		font-size: 1.8em;
+	}
+}
+@media screen and (max-width: 350px) {
+	.room-title{
+		font-size: 1.6em;
+	}
 }
 
 .room-btn {
 	float: right;
-	line-height: 3.4em;
+	line-height: 2.6em;
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 1024px) {
 	.room-btn {
 		float: left;
 		clear: both;
 		line-height: normal;
+		margin-bottom: 0.7em;
 	}
 }
 .room-btn:before,
@@ -1553,6 +1653,7 @@ object {
 	float: left;
 	font-weight: 200;
 	font-size: 0.9em;
+	margin-top: 0;
 }
 
 .room-btn a,
@@ -1568,12 +1669,29 @@ object {
 	text-decoration: underline;
 }
 
-.room-price-col{
+.room-price-col {
 	float: left;
 	width: 33.333333%;
 	font-size: 0.8em;
 	margin: 0.25em 0;
 	font-weight: 200;
+
+}
+
+.room-row--header .room-price-col {
+	font-weight: bold;
+}
+
+.room-row:not(.room-row--header) .room-price-col:first-child{
+	padding-left: 7px;
+}
+
+
+.room-pricing{
+	position: absolute;
+	bottom: 0;
+	left: 2em;
+	right: 2em;
 }
 
 .room-price-col:not(:first-child){
@@ -1586,6 +1704,9 @@ object {
 	clear: right;
 }
 
+.body-text--rooms {
+	margin: 0;
+}
 
 /*--------------------------------------------------------------
 # Footer
@@ -1605,6 +1726,7 @@ object {
 	display: inline-block;
 	padding: 0 20px;
 	text-transform: uppercase;
+	font-weight: 200;
 }
 
 .site-footer li:nth-child(1),

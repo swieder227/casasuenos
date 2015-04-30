@@ -16,7 +16,14 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
+			<div class="border-wave"></div>
 
+			<div id="rooms-accent" class="casa-row casa-row--nopad">
+				<div class="casa-col--bg casa-col--40p casa-col--right"></div>
+				<div class="casa-col--text casa-col--70p">
+					<p class="body-text body-text--rooms">Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views. Please also check out our Amenities & Service link for a full list of our amenities and services that are available. Click here for airport transportation options.</p>
+				</div>
+			</div>
 
 
 			<?php
@@ -30,17 +37,17 @@ get_header(); ?>
 				// Helper Functions to get title
 				function get_room_title($index){
 					if($index == 1){
-							return "<span class='font-sacramento'>Presidential</span>&nbsp;&nbsp;SUITE";
+							return "<span class='font-sacramento'>Presidential</span>&nbsp; SUITE";
 					} elseif ($index == 2) {
-							return "<span class='font-sacramento'>Serenity Jacuuzzi</span>&nbsp;&nbsp;SUITE";
+							return "<span class='font-sacramento'>Serenity Jacuuzzi</span>&nbsp; SUITE";
 					} elseif ($index == 3) {
-							return "<span class='font-sacramento'>Ocean View</span>&nbsp;&nbsp;KING SUITES";
+							return "<span class='font-sacramento'>Ocean View</span>&nbsp; KING&nbsp;SUITES";
 					} elseif ($index == 4) {
-							return "<span class='font-sacramento'>Ocean View</span>&nbsp;&nbsp;VILLA DOUBLE";
+							return "<span class='font-sacramento'>Ocean View</span>&nbsp; VILLA&nbsp;DOUBLE";
 					} elseif ($index == 5) {
-							return "<span class='font-sacramento'>Economy</span>&nbsp;&nbsp;VILLA KING";
+							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;KING";
 					} elseif ($index == 6) {
-							return "<span class='font-sacramento'>Economy</span>&nbsp;&nbsp;VILLA DOUBLE";
+							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;DOUBLE";
 					}
 				}
 
@@ -61,10 +68,10 @@ get_header(); ?>
 								".$fields["room_".$x."_paragraph"]."
 							</p>
 							<div class='room-pricing'>
-								<div class='room-row'>
-									<div class='room-price-col'><b>RATES</b></div>
-									<div class='room-price-col'><b>REGULAR SEASON</b></div>
-									<div class='room-price-col'><b>HOLIDAY 12/22&nbsp;-&nbsp;1/4</b></div>
+								<div class='room-row room-row--header'>
+									<div class='room-price-col'>RATES</div>
+									<div class='room-price-col'>REGULAR SEASON</div>
+									<div class='room-price-col'>HOLIDAY 12/22&nbsp;-&nbsp;1/4</div>
 								</div>
 								<div class='room-row'>
 									<div class='room-price-col'>".$fields["room_".$x."_date_1"]."</div>
@@ -90,7 +97,7 @@ get_header(); ?>
 			<div class="casa-row clear" id="rooms-reserve">
 				<div class="casa-col--bg"></div>
 				<div class="casa-col--text casa-col--right casa-col--pattern-yellow">
-					<h2 class="home-header2 font-sacramento">Reserve<br/>Now</h2>
+					<p class="header-reserve-now"><a href="">Reserve<br/>Now</a></p>
 				</div>
 			</div>
 
