@@ -24,8 +24,8 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 			<div class="casa-row casa-row--nopad clear" id="home-welcome">
-	        <div class="casa-row-bg"></div>
-	        <div class="casa-col clear">
+	        <div class="casa-col--bg"></div>
+	        <div class="casa-col--text casa-col--70p clear">
 	            <h2 class="home-header2 font-sacramento">&mdash;&nbsp;Welcome&nbsp;&mdash;</h2>
 	            <p class="home-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 	            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -35,8 +35,8 @@ get_header(); ?>
 	    </div>
 	    <div class="border-wave"></div>
 	    <div class="casa-row clear" id="home-rooms">
-	        <div class="casa-row-bg"></div>
-	        <div class="casa-col casa-col--right casa-col--solid-blue clear">
+	        <div class="casa-col--bg"></div>
+	        <div class="casa-col--text casa-col--right casa-col--solid-blue clear">
 	            <h2 class="home-header2 font-sacramento">Tropical</h2>
 							<h3 class="home-header3">Dreams</h3>
 							<p class="home-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -47,8 +47,8 @@ get_header(); ?>
 	    </div>
 	    <div class="border-wave"></div>
 	    <div class="casa-row clear" id="home-activities">
-	        <div class="casa-row-bg"></div>
-	        <div class="casa-col casa-col--pattern-yellow clear">
+	        <div class="casa-col--bg"></div>
+	        <div class="casa-col--text casa-col--pattern-yellow clear">
 	            <h2 class="home-header2 font-sacramento">Paradise</h2>
 	            <h3 class="home-header3">Awaits</h3>
 	            <p class="home-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -58,8 +58,8 @@ get_header(); ?>
 	    </div>
 	    <div class="border-wave"></div>
 	    <div class="casa-row clear" id="home-dining">
-	        <div class="casa-row-bg"></div>
-	        <div class="casa-col casa-col--right casa-col--pattern-blue clear">
+	        <div class="casa-col--bg"></div>
+	        <div class="casa-col--text casa-col--right casa-col--pattern-blue clear">
 	            <h2 class="home-header2 font-sacramento">Indulge</h2>
 	            <h3 class="home-header3">In Taste</h3>
 	            <p class="home-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud .</p>
