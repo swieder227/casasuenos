@@ -45,6 +45,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Page Components
+# Casa Row/Col
 # Homepage-Specific
 # Footer
 --------------------------------------------------------------*/
@@ -314,12 +315,12 @@ h1 {
 
 h2 {
 	font-size: 3em;
-	margin: 0.5em;
+	margin: 0.3em;
 }
 
 h3 {
 	font-size: 2.5em;
-	margin: 0.3em;
+	margin: 0.2em;
 	text-transform: uppercase;
 }
 
@@ -536,7 +537,7 @@ textarea {
 	position: absolute;
 	width: 100%;
 	z-index: 9999;
-	background: rgba(101, 153, 192, 0.5);
+	background: rgba(101, 153, 192, 0.85);
 }
 
 .site-header-banner{
@@ -815,7 +816,7 @@ a:active {
 		width: 50%;
 		font-size: 24px;
 		text-align: center;
-		background-color: rgba(101, 153, 192, 0.5);
+		background-color: rgba(101, 153, 192, 0.85);
 	}
 	.header-btn-reservations {
 		left: 50%;
@@ -831,7 +832,7 @@ a:active {
 		float: none;
 	}
 	.nav-menu{
-		background: rgba(101, 153, 192, 0.5);
+		background: rgba(101, 153, 192, 0.85);
 		padding-left: 24px;
 	}
 	.menu-toggle,
@@ -880,7 +881,7 @@ a:active {
 }
 /* Styles on !small*/
 @media screen and (min-width: 911px) {
-	.menu-toggle {
+	#site-navigation .menu-toggle {
 		display: none;
 	}
 	#site-navigation ul {
@@ -943,24 +944,28 @@ a:active {
 /* Button */
 .menu-toggle-sticky {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 90px;
+	top: 5px;
+	left: 5px;
+	width: 100px;
 	height: 50px;
 	padding-left: 50px;
 	background-image: url(imgs/logo_sm.png);
 	background-position: 5px center;
 	background-size: 40px auto;
 	background-repeat: no-repeat;
+	background-color: rgba(101, 153, 192, 0.75);
 	z-index: 1;
 	transform: translateY(-200px);
-	-webkit-transform: tranlsateY(-200px);
-	-webkit-transition: transform 0.4s ease-out 0s;
-	transition: transform 0.4s ease-out 0s;
+	-webkit-transform: translateY(-200px);
+	-webkit-transition: transform 0.4s ease-out 0s, background 0.4s ease 0s;
+	transition: transform 0.4s ease-out 0s, background 0.4s ease 0s;
 }
 .show-sticky .menu-toggle-sticky {
-	transform: translateX(0px);
-	-webkit-transform: tranlsateY(0px);
+	transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+}
+.toggled .menu-toggle-sticky {
+	background-color: rgba(101, 153, 192, 0);
 }
 /* Nav */
 .main-navigation-sticky {
@@ -978,6 +983,17 @@ a:active {
 	animation: opacityIn 0.4s ease-out 1 both;
 }
 
+.main-navigation-sticky .menu-all-pages-container{
+	overflow: auto;
+}
+
+.main-navigation-sticky #primary-menu-sticky {
+	display: -webkit-flex; display: flex;
+	-webkit-flex-direction: column; flex-direction: column;
+	-webkit-justify-content: space-around; justify-content: space-around;
+	-webkit-align-items: center; align-items: center;
+}
+
 #primary-menu-sticky li,
 .sticky-btn-reservations {
 	width: 100%;
@@ -989,8 +1005,9 @@ a:active {
 	font-size: 26px;
 }
 
-.main-navigation-sticky .menu-all-pages-container{
-	overflow: auto;
+#primary-menu-sticky li a:before,
+#primary-menu-sticky li a:after{
+	display: none;
 }
 
 
@@ -1281,17 +1298,20 @@ object {
 /*----------------------------------------------------------
 	# Page Components
 ------------------------------------------------------------*/
+
 /* "Beauty" image ontop of each page, underneath nav */
 .page-topimg{
 	background: rgb(161, 202, 228);
-	background-image: url(imgs/header_bg.jpg);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	min-height: 400px;
 	max-height: 33%;
 }
-/**/
+.page-topimg{	background-image: url(imgs/header_bg.jpg); }
+.page-topimg--rooms{	background-image: url(imgs/bg_home_2.jpg); }
+
+/* Border Wave is a white horizontal separator with wavy top+bottom */
 .border-wave{
 	position: relative;
 	height: 2em;
@@ -1318,7 +1338,8 @@ object {
 	bottom: -6px;
 	background-image: url(imgs/border_wave_bot.png);
 }
-/**/
+
+/* An element with inline em-dash's on both sides */
 .dash-sides:before{
 	content: '\2014\A0';
 	display: inline-block;
@@ -1336,6 +1357,100 @@ object {
 	color: white;
 }
 
+/*----------------------------------------------------------
+	# Casa Row/Col
+		A row by row 2-col layout for imagery + text
+		.casa-row > .casa-row-bg + .casa-col
+------------------------------------------------------------*/
+.casa-row{
+	position: relative;
+	color: white;
+}
+
+.casa-col{
+	position: relative;
+	width: 100%;
+	padding: 0.5em 2em;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+	.casa-row#home-welcome .casa-col{
+		width: 70%;
+	}
+	.casa-col{
+		width: 40%;
+		overflow: auto;
+		min-width: 20em;
+	}
+
+	.casa-col--right{
+		float: right;
+	}
+}
+
+.casa-col--solid-blue{
+	background-color: rgba(29, 149, 181, 0.85);
+}
+.casa-col--pattern-yellow{
+	background-color: rgba(203, 106, 2, 1);
+	background-image: url(imgs/pattern_yellow.png);
+}
+.casa-col--pattern-blue{
+	background-color: rgba(7, 68, 121, 1);
+	background-image: url(imgs/pattern_white.png);
+}
+
+
+.casa-row-bg{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@media screen and (max-width: 599px){
+	.casa-row-bg{
+		width: 100% !important;
+		left:0 !important;
+		right:0 !important;
+	}
+	.casa-row:not(.casa-row--nopad){
+		padding-top: 15em;
+	}
+	.casa-row:not(.casa-row--nopad) .casa-row-bg{
+		height: 15em;
+	}
+}
+
+#home-welcome .casa-row-bg{
+	background-image: url(imgs/bg_home_1.jpg);
+}
+#home-rooms .casa-row-bg{
+	background-image: url(imgs/bg_home_2.jpg);
+}
+#home-activities .casa-row-bg{
+	background-image: url(imgs/bg_home_3.jpg);
+	width: 60%;
+	right: 0;
+	left: auto;
+}
+#home-dining .casa-row-bg{
+	background-image: url(imgs/bg_home_4.jpg);
+	width: 60%;
+}
+#rooms-reserve .casa-row-bg{
+	background-image: url(imgs/bg_rooms_1.jpg);
+	width: 60%;
+}
+
+
+
 /*--------------------------------------------------------------
 # Homepage-Specific
 		Rules specific to home page
@@ -1349,7 +1464,7 @@ object {
 
 .home-header3 {
 	text-align: center;
-	margin-top: -1.3em;
+	margin-top: -1.1em;
 	font-weight: 100;
 	letter-spacing: 13px;
 	margin-left: 0;
@@ -1361,7 +1476,7 @@ object {
 	font-size: 2.1em;
 	text-decoration: none;
 	color: white !important;
-	margin-bottom: 1.5em;
+	margin-bottom: 0.5em;
 }
 .home-anchor:hover {
 	text-decoration: underline;
@@ -1372,120 +1487,21 @@ object {
 	padding-right: 0.2em;
 }
 
-.home-row{
-	position: relative;
-	color: white;
-	/*border-top: 2em solid white;*/
-}
-
-.home-col{
-	position: relative;
-	width: 100%;
-	padding: 0.5em 2em;
-}
-
-@media screen and (min-width: 600px) {
-	.home-row:before,
-	.home-row:after{
-		content:" ";
-		display:table;
-	}
-	.home-row:after{
-		clear: both;
-	}
-	.home-row#home-welcome .home-col{
-		width: 70%;
-	}
-	.home-col{
-		width: 40%;
-		overflow: auto;
-		min-width: 20em;
-	}
-	.home-row#home-rooms .home-col,
-	.home-row#home-dining .home-col{
-		float: right;
-	}
-}
-
-.home-row#home-welcome .home-col{
-	/*background-color: rgba(100, 19, 1, 0.85);*/
-}
-.home-row#home-rooms .home-col{
-	background-color: rgba(29, 149, 181, 0.85);
-}
-.home-row#home-activities .home-col{
-	background-color: rgba(203, 106, 2, 1);
-	background-image: url(imgs/pattern_yellow.png);
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.home-row#home-dining .home-col{
-	background-color: rgba(7, 68, 121, 1);
-	background-image: url(imgs/pattern_white.png);
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-
-.home-bg{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.home-row#home-welcome .home-bg{
-	background-image: url(imgs/home_bg_1.jpg);
-}
-.home-row#home-rooms .home-bg{
-	background-image: url(imgs/home_bg_2.jpg);
-}
-.home-row#home-activities .home-bg{
-	background-image: url(imgs/home_bg_3.jpg);
-	width: 60%;
-	right: 0;
-	left: auto;
-}
-.home-row#home-dining .home-bg{
-	background-image: url(imgs/home_bg_4.jpg);
-	width: 60%;
-}
-
-@media screen and (max-width: 599px){
-	.home-bg{
-		width: 100% !important;
-		left:0 !important;
-		right:0 !important;
-	}
-	.home-row:not(#home-welcome){
-		padding-top: 15em;
-	}
-	.home-row:not(#home-welcome) .home-bg{
-		height: 15em;
-	}
-}
-
 .home-paragraph{
 	font-weight: 200;
 }
+
 
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 .site-footer{
-	background: rgb(240, 240, 240);
+	/*background: rgb(240, 240, 240);*/
 }
 
 .site-footer ul{
 	margin: 0 auto;
   padding: 60px 0;
-  max-width: 950px;
   list-style: none;
   text-align: center;
 }
@@ -1493,6 +1509,7 @@ object {
 .site-footer li{
 	display: inline-block;
 	padding: 0 20px;
+	text-transform: uppercase;
 }
 
 .site-footer li:nth-child(1),
@@ -1501,7 +1518,7 @@ object {
 	border-right: 2px solid #707070;
 }
 
-@media screen and (max-width: 910px){
+@media screen and (max-width: 1023px){
 	.site-footer ul{
 		width: 100%;
 	}
