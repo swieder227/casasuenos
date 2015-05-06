@@ -93,6 +93,7 @@
 
 		// DOM Element
 		this.elem = elem;
+
 		// child btn DOM element
 		this.btn = elem.querySelectorAll(".menu-toggle-sticky")[0];
 		this.nav = elem.querySelectorAll(".main-navigation-sticky")[0];

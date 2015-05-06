@@ -27,10 +27,10 @@ get_header(); ?>
 	        <div class="casa-col--bg"></div>
 	        <div class="casa-col--text casa-col--70p clear">
 	            <h2 class="home-header2 font-sacramento">&mdash;&nbsp;Welcome&nbsp;&mdash;</h2>
-	            <p class="home-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+	            <p class="home-paragraph"><?php _e( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 	            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
 	            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-	            aliquip ex ea commodo consequat.</p>
+	            aliquip ex ea commodo consequat.', 'casasuenos' );?></p>
 	        </div>
 	    </div>
 	    <div class="border-wave"></div>

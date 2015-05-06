@@ -46,6 +46,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Galleries
 # Page Components
 	## page-topimg
+	## toptabs
 	## border-wave
 	## dash-sides
 	## btn-cta
@@ -53,6 +54,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Casa Row/Col
 # Homepage-Specific
 # Rooms-Specific
+# Amenities-Specific
 # Footer
 --------------------------------------------------------------*/
 
@@ -396,6 +398,17 @@ big {
 	font-weight: 200;
 	line-height: 1.6em;
 }
+.body-text-sm {
+	font-size: 0.8em;
+}
+.body-text-title {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+.body-text-subtitle {
+	font-weight: bold;
+}
+
 
 .font-sacramento{
 	font-family: 'Sacramento', 'serif';
@@ -866,6 +879,7 @@ a:active {
 		-webkit-animation: opacityIn 0.2s ease-out 1 both;
 		animation: opacityIn 0.2s ease-out 1 both;
 		padding: 10px 0 10px 24px;
+		pointer-events: auto;
 	}
 	#site-navigation .menu-all-pages-container {
 		position: absolute;
@@ -873,6 +887,7 @@ a:active {
 		height: 322px;
 		width: 100%;
 		padding-top: 24px;
+		pointer-events: none;
 	}
 	.main-navigation li {
 		width: 100%;
@@ -1339,8 +1354,65 @@ object {
 	min-height: 400px;
 	max-height: 33%;
 }
-.page-topimg{	background-image: url(imgs/header_bg.jpg); }
-.page-topimg--rooms{	background-image: url(imgs/bg_home_2.jpg); }
+.page-topimg {	background-image: url(imgs/header_bg.jpg); }
+.page-topimg--rooms {	background-image: url(imgs/bg_home_2.jpg); }
+.page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
+.page-topimg--trans { background-image: url(imgs/bg_trans_1.jpg); }
+
+/* ## toptabs : tabs with anchor in the bottom left corner of a page-topimg */
+.toptabs-contain{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+.toptabs {
+	position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+	color: white;
+}
+
+.toptab {
+	float: left;
+	background-color: rgba(101, 153, 192, 0.8);
+	-webkit-transition: background 0.5s ease-out 0s;
+	transition: background 0.5s ease-out 0s;
+	font-size: 1.5rem;
+	padding: 0.5rem 2rem 0.3rem;
+}
+.toptab:not(:last-child) {
+	border-right: 2px solid #7ea9ca;
+}
+.toptab:hover {
+	background-color: rgba(121, 173, 212, 0.9);
+}
+.toptab.active {
+	color: rgba(101, 153, 192, 1);
+	background: white;
+}
+
+.toptab a,
+.toptab a:hover,
+.toptab a:focus,
+.toptab a:active {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+	.toptabs {
+		width: 100%;
+		text-align: center;
+	}
+	.toptab {
+		float: none;
+		width: 100%;
+		line-height: 1;
+		border-right: none;
+		border-bottom: 2px solid #7ea9ca;
+	}
+}
+
 
 /* ## border-wave : Border Wave is a white horizontal separator with wavy top+bottom */
 .border-wave{
@@ -1520,8 +1592,17 @@ object {
 	background-image: url(imgs/bg_home_4.jpg);
 	width: 60%;
 }
-#rooms-reserve .casa-col--bg{
+.reserve--rooms .casa-col--bg{
 	background-image: url(imgs/bg_rooms_1.jpg);
+	width: 60%;
+}
+.reserve--amen .casa-col--bg{
+	background-image: url(imgs/bg_amen_2.jpg);
+	width: 60%;
+	background-position: 50% 20%;
+}
+.reserve--trans .casa-col--bg{
+	background-image: url(imgs/bg_trans_2.jpg);
 	width: 60%;
 }
 
@@ -1707,6 +1788,34 @@ object {
 .body-text--rooms {
 	margin: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Amenities-Specific
+--------------------------------------------------------------*/
+.body-text--amen{
+	max-width: 40rem;
+	margin: 0;
+	color: #000000;
+	-moz-column-count: 2;
+	-moz-column-gap: 0px;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 0px;
+	column-count: 2;
+	column-gap: 0px;
+}
+@media screen and (max-width: 650px) {
+	.body-text--amen {
+		-moz-column-count: 1;
+		-webkit-column-count: 1;
+		column-count: 1;
+	}
+}
+
+.body-text--amen ul {
+	margin: 0;
+}
+
 
 /*--------------------------------------------------------------
 # Footer

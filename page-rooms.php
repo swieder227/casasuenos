@@ -12,7 +12,15 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 
-		<div class="page-topimg page-topimg--rooms"></div>
+		<div class="page-topimg page-topimg--rooms">
+			<div class="toptabs-contain">
+				<div class="toptabs">
+					<div class="toptab font-sacramento active"><a href="<?php echo get_permalink('1727') ?>">rooms</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink('1776') ?>">amenities</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink('1778') ?>">transportation</a></div>
+				</div>
+			</div>
+		</div>
 
 		<main id="main" class="site-main" role="main">
 
@@ -94,7 +102,7 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 			<!-- Reserve Now -->
-			<div class="casa-row clear" id="rooms-reserve">
+			<div class="casa-row clear reserve--rooms">
 				<div class="casa-col--bg"></div>
 				<div class="casa-col--text casa-col--right casa-col--pattern-yellow">
 					<p class="header-reserve-now"><a href="">Reserve<br/>Now</a></p>
