@@ -55,6 +55,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Homepage-Specific
 # Rooms-Specific
 # Amenities-Specific
+# Transportation-Specific
+# Activities-Specific
 # Footer
 --------------------------------------------------------------*/
 
@@ -644,13 +646,13 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #092e6e;
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #092e6e;
 }
 
 a:focus {
@@ -1358,6 +1360,7 @@ object {
 .page-topimg--rooms {	background-image: url(imgs/bg_home_2.jpg); }
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
 .page-topimg--trans { background-image: url(imgs/bg_trans_1.jpg); }
+.page-topimg--active { background-image: url(imgs/bg_home_3.jpg); }
 
 /* ## toptabs : tabs with anchor in the bottom left corner of a page-topimg */
 .toptabs-contain{
@@ -1553,6 +1556,7 @@ object {
 .casa-col--50p{ width: 50%;	}
 .casa-col--60p{ width: 60%;	}
 .casa-col--70p{ width: 70%;	}
+.casa-col--100p{ width: 100%;	}
 .casa-col--right{ float: right; }
 
 .casa-col--solid-blue{
@@ -1605,6 +1609,21 @@ object {
 	background-image: url(imgs/bg_trans_2.jpg);
 	width: 60%;
 }
+.casa-row--active1 .casa-col--bg {
+	background-image: url(imgs/bg_active_1.jpg);
+	width: 60%;
+	left: 40%;
+	background-position: 50% 20%;
+}
+.casa-row--active2 .casa-col--bg {
+	background-image: url(imgs/bg_active_2.jpg);
+	width: 60%;
+}
+.casa-row--active3 .casa-col--bg {
+	background-image: url(imgs/bg_active_3.jpg);
+}
+
+
 
 /* Rooms thumbnails */
 #room-1 .casa-col--bg{ background-image: url(imgs/rooms_pres.jpg); }
@@ -1638,6 +1657,11 @@ object {
 #home-welcome .home-header2{
 	margin: 0.4em 0 -0.4em;
 }
+.home-header2-sm {
+	font-size: 0.7em;
+	line-height: 0.5;
+	display: block;
+}
 
 .home-header3 {
 	text-align: center;
@@ -1653,7 +1677,7 @@ object {
 	font-size: 2.1em;
 	text-decoration: none;
 	color: white !important;
-	margin-bottom: 0.5em;
+	margin-bottom: 0;
 }
 .home-anchor:hover {
 	text-decoration: underline;
@@ -1815,6 +1839,40 @@ object {
 .body-text--amen ul {
 	margin: 0;
 }
+
+
+/*--------------------------------------------------------------
+# Transportation-Specific
+--------------------------------------------------------------*/
+
+.body-text--trans .body-text-title {
+	margin: 0;
+}
+
+.body-text--trans .body-text-subtitle {
+	font-size: 0.9em;
+}
+
+
+/*--------------------------------------------------------------
+# Activities-Specific
+--------------------------------------------------------------*/
+.casa-row--active1 .casa-col--text,
+.casa-row--active2 .casa-col--text {
+	min-height: 20em;
+}
+
+@media screen and (max-width: 700px) {
+	.casa-row--active1 .casa-col--text,
+	.casa-row--active2 .casa-col--text {
+		min-height: 15em;
+	}
+}
+
+.casa-row--active3 .home-paragraph {
+	margin: 0;
+}
+
 
 
 /*--------------------------------------------------------------
