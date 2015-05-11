@@ -15,9 +15,9 @@ get_header(); ?>
 		<div class="page-topimg page-topimg--amen">
 			<div class="toptabs-contain">
 				<div class="toptabs">
-					<div class="toptab font-sacramento"><a href="<?php echo get_permalink('1727') ?>">rooms</a></div>
-					<div class="toptab font-sacramento active"><a href="<?php echo get_permalink('1776') ?>">amenities</a></div>
-					<div class="toptab font-sacramento"><a href="<?php echo get_permalink('1778') ?>">transportation</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
+					<div class="toptab font-sacramento active"><a href="<?php echo get_permalink(get_page_by_title( 'Amenities' )->ID) ?>">amenities</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Transportation' )->ID) ?>">transportation</a></div>
 				</div>
 			</div>
 		</div>

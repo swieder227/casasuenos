@@ -93,6 +93,7 @@
 
 		// DOM Element
 		this.elem = elem;
+		this.bodyelem = document.getElementsByTagName("body")[0];
 
 		// child btn DOM element
 		this.btn = elem.querySelectorAll(".menu-toggle-sticky")[0];
@@ -133,25 +134,25 @@
 
 		stick: function() {
 			if(!this.visible)
-				this.elem.className += " show-sticky";
+				this.bodyelem.className += " show-sticky";
 			this.visible = true;
 		},
 
 		unstick: function() {
 			if(this.visible)
-				this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "show-sticky|toggled" + '(\\s|$)*', 'g'), '');
+				this.bodyelem.className = this.bodyelem.className.replace(new RegExp('(^|\\s)*' + "show-sticky|toggled" + '(\\s|$)*', 'g'), '');
 			this.visible = false;
 		},
 
 		toggle: function() {
-			if(this.elem.className.indexOf("toggled") >= 0)
-				this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
+			if(this.bodyelem.className.indexOf("toggled") >= 0)
+				this.bodyelem.className = this.bodyelem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
 			else
-				this.elem.className += " toggled";
+				this.bodyelem.className += " toggled";
 		},
 
 		close: function() {
-			this.elem.className = this.elem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
+			this.bodyelem.className = this.bodyelem.className.replace(new RegExp('(^|\\s)*' + "toggled" + '(\\s|$)*', 'g'), '');
 		}
 
 	}
