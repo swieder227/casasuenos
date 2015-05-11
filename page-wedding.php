@@ -55,14 +55,19 @@ get_header(); ?>
 				</div>
 				<div class="casa-col casa-col--text casa-col--weddingform">
 					<?php echo do_shortcode( '[contact-form-7 id="1787" title="Contact form 1"]' ) ?>
+					<!-- <p class="body-text">
+						US  877-372-3993<br>
+						MX  (+52) 998-888-0370<br>
+						weddings@casasuenos.com<br>
+						reservations@casasuenos.com<br>
+					</p> -->
 				</div>
 			</div>
 			<div class="border-wave"></div>
 			<div class="casa-row clear casa-row--wed2">
 			    <div class="casa-col--bg"></div>
-			    <div class="casa-col--text casa-col--30p casa-col--right casa-col--pattern-yellow casa-col--minh20 clear">
-			        <h2 class="home-header2 font-sacramento">Spa</h2>
-			        <p class="body-col-btn"><a href="#">TREATMENT MENU</a></p>
+			    <div class="casa-col--text casa-col--30p casa-col--right casa-col--pattern-yellow clear">
+			        <h2 class="home-header2 font-sacramento">Call for Packages</h2>
 			    </div>
 			</div>
 		</main><!-- #main -->
