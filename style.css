@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## dash-sides
 	## btn-cta
 	## header-reserve-now
+	## pattern-overlay
 # Casa Row/Col
 # Homepage-Specific
 # Rooms-Specific
@@ -407,8 +408,8 @@ big {
 	font-size: 0.8em;
 }
 .body-text-title {
-	font-size: 1.2em;
-	font-weight: bold;
+	font-size: 1.0em;
+	font-weight: 600;
 }
 .body-text-subtitle {
 	font-weight: 500;
@@ -437,6 +438,8 @@ big {
 .margin-b-0 {
 	margin-bottom: 0;
 }
+
+
 
 /*--------------------------------------------------------------
 # Elements
@@ -916,7 +919,7 @@ a:active {
 	#site-navigation .menu-all-pages-container {
 		position: absolute;
 		top: 77px;
-		height: 322px;
+		height: 373px;
 		width: 100%;
 		padding-top: 24px;
 		pointer-events: none;
@@ -943,6 +946,7 @@ a:active {
 		display: none;
 	}
 }
+
 /* Styles on !small*/
 @media screen and (min-width: 911px) {
 	.menu-toggle {
@@ -1382,9 +1386,18 @@ object {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	min-height: 400px;
+	min-height: 450px;
 	max-height: 33%;
 }
+@media screen and (max-width: 550px) {
+	.page-topimg {
+		min-height: 350px;
+	}
+	.menu-all-pages-container {
+		height: 273px !important; /* these 2 types are linked, so it's important to put them together. overrides larger media query */
+	}
+}
+
 .page-topimg {	background-image: url(imgs/header_bg.jpg); }
 .page-topimg--rooms {	background-image: url(imgs/bg_home_2.jpg); }
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
@@ -1452,7 +1465,7 @@ object {
 /* ## border-wave : Border Wave is a white horizontal separator with wavy top+bottom */
 .border-wave{
 	position: relative;
-	height: 2em;
+	height: 1em;
 	width: 100%;
 	background-color: white;
 	z-index: 1000;
@@ -1538,6 +1551,34 @@ object {
 	right: calc(50% - 2em);
 }
 
+/* ## pattern-overlay : extra doohickeys that float on the page */
+.pattern-overlay {
+	position: absolute;
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 18em;
+	height: 18em;
+	z-index: 2000;
+}
+
+.pattern-overlay-top { top: 0; }
+.pattern-overlay-topextra { top: -6em; }
+.pattern-overlay-bottom { bottom: -4em; }
+.pattern-overlay-left { left: -2em; }
+.pattern-overlay-right { right: -4em; }
+
+.pattern-overlay-zextra { z-index: 4000;}
+
+.pattern-overlay-turtle {
+	background-image: url(imgs/pattern_turtle.png);
+}
+.pattern-overlay-floral {
+	background-image: url(imgs/pattern_floral.png);
+	width: 15rem;
+}
+
+
 /*----------------------------------------------------------
 	# Casa Row/Col
 		A row by row 2-col layout for imagery + text
@@ -1580,6 +1621,7 @@ object {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	z-index: 3000;
 }
 
 /*Desktop: special cases */
@@ -1656,7 +1698,8 @@ object {
 	width: 70%;
 }
 .casa-row--active3 .casa-col--bg {
-	background-image: url(imgs/bg_active_3.jpg);
+	background-image: url(imgs/bg_active_3.jpg); 
+	background-position: 70% 50%;
 }
 
 .casa-row--dining2 .casa-col--bg {
@@ -1704,6 +1747,7 @@ object {
 #room-4 .casa-col--bg{ background-image: url(imgs/rooms_oceandouble.jpg); }
 #room-5 .casa-col--bg{ background-image: url(imgs/rooms_econking.jpg); }
 #room-6 .casa-col--bg{ background-image: url(imgs/rooms_econdouble.jpg); }
+#room-7 .casa-col--bg{ background-image: url(imgs/rooms_casa.jpg); }
 
 #rooms-accent .casa-col--bg {
 	background-image: url(imgs/pattern_yellowstar.png);
@@ -1762,6 +1806,12 @@ object {
 
 .home-paragraph {
 	font-weight: 200;
+}
+
+.home-paragraph-2 {
+  margin-left: 1.2em;
+  font-size: 1.17rem;
+  margin-right: .6em;
 }
 
 /*--------------------------------------------------------------
@@ -2071,5 +2121,8 @@ object {
 		border-right: none !important;
 		padding: 5px 0;
 	}
+}
+
+.footer-extra {
 
 }

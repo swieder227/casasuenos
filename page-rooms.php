@@ -27,10 +27,10 @@ get_header(); ?>
 			<div class="border-wave"></div>
 
 			<div id="rooms-accent" class="casa-row casa-row--nopad">
-				<div class="casa-col--bg casa-col--40p casa-col--right"></div>
 				<div class="casa-col--text casa-col--70p">
-					<p class="body-text body-text--rooms">Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views. Please also check out our Amenities & Service link for a full list of our amenities and services that are available. Click here for airport transportation options.</p>
+					<p class="body-text body-text--rooms">Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views. Please also check out our <a href="<?php echo get_permalink(get_page_by_title( 'Amenities' )->ID) ?>">Amenities & Service</a> link for a full list of our amenities and services that are available. Click here for airport <a href="<?php echo get_permalink(get_page_by_title( 'Transportation' )->ID) ?>">transportation</a> options.</p>
 				</div>
+				<div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
 			</div>
 
 
@@ -56,11 +56,13 @@ get_header(); ?>
 							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;KING";
 					} elseif ($index == 6) {
 							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;DOUBLE";
+					} elseif ($index == 7) {
+							return "<span class='font-sacramento'>Rent the Whole Casa</span>";
 					}
 				}
 
 				// Loop, iterating through the fields data into the PHP template
-				for($x = 1; $x <= 6; $x++){
+				for($x = 1; $x <= 7; $x++){
 
 					echo "<div class='border-wave'></div>";
 					echo "

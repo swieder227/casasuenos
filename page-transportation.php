@@ -24,8 +24,6 @@ get_header(); ?>
 
 		<main id="main" class="site-main" role="main">
 
-			<div class="border-wave"></div>
-
 			<?php $fields = get_fields(get_page_by_title( 'Transportation' )->ID); ?>
 
 			<div class="body-text body-text--trans">
@@ -43,6 +41,7 @@ get_header(); ?>
 					This service may be refunded and altered to Gold Transportation during inclement weather.</p>
 					<p class="body-text body-text-subtitle">Platinum Round Trip Transportation: <?php echo $fields['platinum_price']?></p>
 				</div>
+				<div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
 			</div>
 
 			<div class="border-wave"></div>

@@ -30,6 +30,7 @@ get_header(); ?>
 	            <p class="home-paragraph"><?php _e( 'Breathtaking views and an inviting atmosphere are the hallmarks of this beautiful boutique hotel.
 	            	With a warm and attentive staff, Casa de los Sueños will strive to discover and fulfill your every need and wish.', 'casasuenos' );?></p>
 	        </div>
+	        <div class="pattern-overlay pattern-overlay-top pattern-overlay-left pattern-overlay-turtle"></div>
 	    </div>
 	    <div class="border-wave"></div>
 	    <div class="casa-row clear" id="home-rooms">
@@ -52,6 +53,7 @@ get_header(); ?>
 	            and is an ideal base camp from which to explore the beautiful and authentic community located on the island.</p>
 	            <a class="home-anchor font-sacramento" href="<?php echo $url_activities ?>">click for adventure</a>
 	        </div>
+	        <div class="pattern-overlay pattern-overlay-topextra pattern-overlay-zextra pattern-overlay-right pattern-overlay-floral"></div>
 	    </div>
 	    <div class="border-wave"></div>
 	    <div class="casa-row clear" id="home-dining">

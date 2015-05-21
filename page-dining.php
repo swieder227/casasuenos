@@ -27,6 +27,10 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 
+			<div class="casa-row">
+				<div class="pattern-overlay pattern-overlay-top pattern-overlay-right pattern-overlay-turtle"></div>
+			</div>
+
 			<div class="casa-row casa-row--nopad">
 				<div class="casa-col casa-col--text clear casa-col--100p">
 					<p class="body-text body-text--dining1">

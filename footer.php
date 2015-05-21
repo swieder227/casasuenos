@@ -19,6 +19,8 @@
 				<li>Mexico 998-888-0369</li>
 			</ul>
 
+			<div class="footer-extra">Reservations@casasuenos.com</div>
+
 			<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'casasuenos' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'casasuenos' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>
 			<?php printf( __( 'Theme: %1$s by %2$s.', 'casasuenos' ), 'casasuenos', '<a href="http://sethwieder.com" rel="designer">Seth Wieder</a>' ); ?>-->

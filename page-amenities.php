@@ -30,6 +30,7 @@ get_header(); ?>
 				<?php if (have_posts()) : while (have_posts()) : the_post();?>
 				<?php the_content(); ?>
 				<?php endwhile; endif; ?>
+				<div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
 			</div>
 
 			<div class="border-wave"></div>
