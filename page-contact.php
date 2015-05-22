@@ -24,7 +24,7 @@ get_header(); ?>
       <div class="border-wave"></div>
   
       <div class="casa-row casa-row--nopad">
-        <div class="casa-col casa-col--text">
+        <div class="casa-col casa-col--text casa-col--100p">
           <?php echo do_shortcode( '[contact-form-7 id="1787" title="Contact form 1"]' ) ?>    
         </div>
       </div>
