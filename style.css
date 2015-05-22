@@ -1406,6 +1406,9 @@ object {
 .page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); }
 .page-topimg--spa { background-image: url(imgs/bg_spa_1.jpg); }
 .page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); }
+.page-topimg--events { background-image: url(imgs/bg_events.jpg); }
+.page-topimg--gallery { background-image: url(imgs/bg_gallery.jpg); }
+.page-topimg--contact { background-image: url(imgs/bg_contact.jpg); }
 
 /* ## toptabs : tabs with anchor in the bottom left corner of a page-topimg */
 .toptabs-contain{
@@ -1832,7 +1835,7 @@ object {
 }
 @media screen and (max-width: 900px) {
 	.room-content .casa-col--text {
-		padding: 0 0.5em 6em 0.5em;
+		padding: 0 0.5em 6.5em 0.5em;
 	}
 }
 @media screen and (max-width: 300px) {
@@ -1937,6 +1940,12 @@ object {
 
 .body-text--rooms {
 	margin: 0;
+}
+
+.room-fineprint {
+	font-size: 0.6em;
+	font-style: italic;
+	margin-top: 1em;
 }
 
 
@@ -2087,11 +2096,12 @@ object {
 
 .site-footer li{
 	display: inline-block;
-	padding: 0 20px;
+	padding: 5px 20px;
 	text-transform: uppercase;
 	font-weight: 200;
 }
 
+/*
 .site-footer li:nth-child(1),
 .site-footer li:nth-child(2),
 .site-footer li:nth-child(3){
@@ -2121,8 +2131,4 @@ object {
 		border-right: none !important;
 		padding: 5px 0;
 	}
-}
-
-.footer-extra {
-
-}
+}*/

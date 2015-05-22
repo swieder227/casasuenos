@@ -11,7 +11,7 @@ get_header(); ?>
 
   <div id="primary" class="content-area">
 
-    <div class="page-topimg page-topimg--wed">
+    <div class="page-topimg page-topimg--contact">
       <div class="toptabs-contain">
         <div class="toptabs">
           <div class="toptab font-sacramento active"><a href="#">contact</a></div>
@@ -23,7 +23,11 @@ get_header(); ?>
 
       <div class="border-wave"></div>
   
-      <?php echo do_shortcode( '[contact-form-7 id="1787" title="Contact form 1"]' ) ?>
+      <div class="casa-row casa-row--nopad">
+        <div class="casa-col casa-col--text">
+          <?php echo do_shortcode( '[contact-form-7 id="1787" title="Contact form 1"]' ) ?>    
+        </div>
+      </div>
 
     </main><!-- #main -->
   </div><!-- #primary -->

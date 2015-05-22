@@ -15,11 +15,12 @@
 			<ul class="clear">
 				<li>CASA de los Sueños</li>
 				<li>Isla Mujeres, Mexico</li>
+				<br>
 				<li>US Toll free 877-372-3993</li>
 				<li>Mexico 998-888-0369</li>
+				<br>
+				<li>Reservations@casasuenos.com</li>
 			</ul>
-
-			<div class="footer-extra">Reservations@casasuenos.com</div>
 
 			<!--<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'casasuenos' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'casasuenos' ), 'WordPress' ); ?></a>
 			<span class="sep"> | </span>

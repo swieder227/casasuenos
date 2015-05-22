@@ -14,7 +14,8 @@ get_header(); ?>
 		<div class="page-topimg page-topimg--wed">
 			<div class="toptabs-contain">
 				<div class="toptabs">
-					<div class="toptab font-sacramento active"><a href="#">weddings &amp; events</a></div>
+					<div class="toptab font-sacramento active"><a href="#">weddings</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Events' )->ID) ?>">events</a></div>
 				</div>
 			</div>
 		</div>
@@ -23,8 +24,30 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 
+			
+
 			<div class="casa-row casa-row--nopad clear">
 				<div class="casa-col casa-col--text casa-col--weddingcontent">
+					<?php 
+						$fields = get_fields(get_page_by_title( 'Weddings & Events' )->ID);
+
+						for ($i=1; $i <= 3; $i++) { 
+							echo "<p class='body-text body-text-title'>";
+							// Title
+							echo $fields["tier_".$i."_name"];
+								// Body
+								echo "<p class='body-text'>";
+								echo $fields["tier_".$i."_paragraph"];
+								echo "</p>";	
+								// Price
+								echo "<p class='body-text body-text-subtitle'>";
+								echo $fields["tier_".$i."_name"]." price: ".$fields["tier_".$i."_price"];
+								echo "</p>";	
+							echo "</p>";
+						}
+					?>
+				</div>
+				<!-- <div class="casa-col casa-col--text casa-col--weddingcontent">
 					<p class="body-text body-text-title">WEDDINGS</p>
 					<p class="body-text">
 						Located on the gorgeous Caribbean, Casa del los Sueños is a perfect location for your beautiful, memorable wedding. 
@@ -57,7 +80,7 @@ get_header(); ?>
 					<p class="body-text">
 						Casa de los Sueños is an incredible location to stage your special event. We can cater to a host of different occasions such as: conferences, speaking events, fundraisers, special dinners, family reunions, yoga retreats, and more. Our beautiful tropical locale and attentive staff will enhance your special event and thrill your guests. Isla Mujeres also offers a variety of activities for your guests to enjoy in their downtime.
 					</p>
-				</div>
+				</div> -->
 				<div class="casa-col casa-col--text casa-col--weddingform">
 					<?php echo do_shortcode( '[contact-form-7 id="1787" title="Contact form 1"]' ) ?>
 					<!-- <p class="body-text">

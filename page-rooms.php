@@ -78,20 +78,23 @@ get_header(); ?>
 								".$fields["room_".$x."_paragraph"]."
 							</p>
 							<div class='room-pricing'>
-								<div class='room-row room-row--header'>
+								<div class='room-row room-row--header clear'>
 									<div class='room-price-col'>RATES</div>
 									<div class='room-price-col'>REGULAR SEASON</div>
 									<div class='room-price-col'>HOLIDAY 12/22&nbsp;-&nbsp;1/4</div>
 								</div>
-								<div class='room-row'>
+								<div class='room-row clear'>
 									<div class='room-price-col'>".$fields["room_".$x."_date_1"]."</div>
 									<div class='room-price-col'>$".$fields["room_".$x."_date_1_pricereg"]." USD</div>
 									<div class='room-price-col'>$".$fields["room_".$x."_date_1_priceholiday"]." USD</div>
 								</div>
-								<div class='room-row'>
+								<div class='room-row clear'>
 									<div class='room-price-col'>".$fields["room_".$x."_date_2"]."</div>
 									<div class='room-price-col'>$".$fields["room_".$x."_date_2_pricereg"]." USD</div>
 									<div class='room-price-col'>$".$fields["room_".$x."_date_2_priceholiday"]." USD</div>
+								</div>
+								<div class='room-row clear'>
+									<div class='room-fineprint'>All rooms subject to 19% tax</div>
 								</div>
 							</div>
 						</div>
