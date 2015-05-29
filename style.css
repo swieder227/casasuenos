@@ -1952,7 +1952,7 @@ object {
 /*--------------------------------------------------------------
 # Amenities-Specific
 --------------------------------------------------------------*/
-.body-text--amen{
+.body-text-2col {
 	max-width: 40rem;
 	margin: 0;
 	padding: 0;
@@ -1964,7 +1964,7 @@ object {
 	column-gap: 0px;
 }
 @media screen and (max-width: 650px) {
-	.body-text--amen {
+	.body-text-2col {
 		padding: 0 1em;
 		-moz-column-count: 1;
 		-webkit-column-count: 1;
@@ -1975,6 +1975,7 @@ object {
 .body-text--amen ul {
 	margin: 0;
 	font-size: 1em;
+	padding-left: 1em;
 }
 
 
@@ -2078,6 +2079,14 @@ object {
 .casa-col--weddingform input {
 	width: 100%;
 	color: #092e6e;
+}
+
+.casa-col--weddingcontent ul {
+	margin: 1em 0;
+}
+
+ul.body-text--events {
+	padding-left: 1em;
 }
 
 /*--------------------------------------------------------------

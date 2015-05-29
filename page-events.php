@@ -25,7 +25,7 @@ get_header(); ?>
       <div class="casa-row casa-row--nopad clear">
         <div class="casa-col casa-col--text casa-col--100p">
           <p class="body-text body-text-title">WE OFFER</p>
-          <ul class="body-text body-text--amen">
+          <ul class="body-text body-text-2col body-text--events">
             <li>Hotel</li>
             <li>Restaurant</li>
             <li>Gorgeous tropical setting</li>
@@ -44,8 +44,8 @@ get_header(); ?>
           <p class="body-text">
             Casa de los Sueños is an incredible location to stage your special event. We can cater to a host of different occasions such as: conferences, speaking events, fundraisers, special dinners, family reunions, yoga retreats, and more. Our beautiful tropical locale and attentive staff will enhance your special event and thrill your guests. Isla Mujeres also offers a variety of activities for your guests to enjoy in their downtime.
           </p>
-          <div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
         </div>
+        <div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
       </div>
     </main><!-- #main -->
   </div><!-- #primary -->

@@ -31,19 +31,24 @@ get_header(); ?>
 					<?php 
 						$fields = get_fields(get_page_by_title( 'Weddings & Events' )->ID);
 
+						//Intro paragraph
+						echo "<span class='body-text'>";
+						echo $fields["wedding_intro"];
+						echo "</span>";	
+
 						for ($i=1; $i <= 3; $i++) { 
-							echo "<p class='body-text body-text-title'>";
+							echo "<span class='body-text body-text-title'>";
 							// Title
 							echo $fields["tier_".$i."_name"];
 								// Body
-								echo "<p class='body-text'>";
+								echo "<span class='body-text'>";
 								echo $fields["tier_".$i."_paragraph"];
-								echo "</p>";	
+								echo "</span>";	
 								// Price
 								echo "<p class='body-text body-text-subtitle'>";
 								echo $fields["tier_".$i."_name"]." price: ".$fields["tier_".$i."_price"];
 								echo "</p>";	
-							echo "</p>";
+							echo "</span>";
 						}
 					?>
 				</div>
