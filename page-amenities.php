@@ -42,7 +42,7 @@ get_header(); ?>
 			<div class="casa-row clear reserve--amen">
 				<div class="casa-col--bg"></div>
 				<div class="casa-col--text casa-col--right casa-col--pattern-yellow">
-					<p class="header-reserve-now"><a href="">Reserve<br/>Now</a></p>
+					<p class="header-reserve-now"><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'>Reserve<br/>Now</a></p>
 				</div>
 			</div>
 
