@@ -1409,7 +1409,8 @@ object {
 	body.home .page-topimg {
 		min-height: 550px;
 	}
-
+}
+@media screen and (min-width: 551px) and (max-width: 920px) {
 	body.home .menu-all-pages-container {
 		height: 473px !important;
 	}
