@@ -26,10 +26,14 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 
-			<div class="body-text body-text-sm body-text--amen">
-				<?php if (have_posts()) : while (have_posts()) : the_post();?>
-				<?php the_content(); ?>
-				<?php endwhile; endif; ?>
+			<div id="rooms-accent" class="casa-row casa-row--nopad">
+				<div class="casa-col--text casa-col--100p">
+					<div class="body-text body-text-sm body-text-2col body-text--amen ">
+						<?php if (have_posts()) : while (have_posts()) : the_post();?>
+						<?php the_content(); ?>
+						<?php endwhile; endif; ?>
+					</div>
+				</div>
 				<div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
 			</div>
 
