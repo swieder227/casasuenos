@@ -38,7 +38,7 @@
 				<!-- Main Menu -->
 				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 				<!-- Additional Buttons -->
-				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="#">reservations</a></div>
+				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="http://hotel1599.openhotel.com/results.cfm">reservations</a></div>
 				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
 			</nav><!-- #site-navigation -->
 		</div>
@@ -51,7 +51,7 @@
 			<div></div>
 		</button>
 		<div class="main-navigation main-navigation-sticky">
-			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="#">reservations</a></div>
+			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="http://hotel1599.openhotel.com/results.cfm">reservations</a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-sticky' ) ); ?>
 		</div>
 	</div>

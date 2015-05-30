@@ -596,7 +596,7 @@ textarea {
 	z-index: 9999;
 	background: rgba(101, 153, 192, 0.85);
 }
-@media screen and (min-width: 911px) {
+@media screen and (min-width: 921px) {
 	#masthead {
 		position: fixed;
 	}
@@ -867,7 +867,7 @@ a:active {
   100% { opacity: 1; }
 }
 /* Styles on small*/
-@media screen and (max-width: 910px){
+@media screen and (max-width: 920px){
 	.site-branding {
 		float: none;
 		margin:0 auto;
@@ -948,7 +948,7 @@ a:active {
 }
 
 /* Styles on !small*/
-@media screen and (min-width: 911px) {
+@media screen and (min-width: 921px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -1202,6 +1202,13 @@ a:active {
 	max-width: 1024px;
 	margin: 0 auto;
 }
+
+@media screen and (max-width: 1175px) {
+	.site-main {
+		overflow: hidden;
+	}
+}
+
 /*.site-main:before,
 .site-main:after{
 	content: '';
@@ -1398,6 +1405,17 @@ object {
 	}
 }
 
+@media screen and (min-width: 551px) {
+	body.home .page-topimg {
+		min-height: 550px;
+	}
+
+	body.home .menu-all-pages-container {
+		height: 473px !important;
+	}
+}
+
+
 .page-topimg {	background-image: url(imgs/header_bg.jpg); }
 .page-topimg--rooms {	background-image: url(imgs/bg_home_2.jpg); }
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
@@ -1563,6 +1581,7 @@ object {
 	width: 18em;
 	height: 18em;
 	z-index: 2000;
+	pointer-events: none;
 }
 
 .pattern-overlay-top { top: 0; }
@@ -1812,9 +1831,9 @@ object {
 }
 
 .home-paragraph-2 {
-  margin-left: 1.2em;
-  font-size: 1.17rem;
-  margin-right: .6em;
+  margin-left: 1em;
+  font-size: 1.10rem;
+  margin-right: .1em;
 }
 
 /*--------------------------------------------------------------

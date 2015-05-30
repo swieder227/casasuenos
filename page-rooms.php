@@ -72,9 +72,15 @@ get_header(); ?>
 						<div class='casa-col--text casa-col--right casa-col--60p'>
 							<div class='room-title'>
 								".get_room_title($x)."
-							</div>
-							<div class='room-btn btn-cta'><a href='#'>Reserve&nbsp;Now</a></div>
-							<p class='room-paragraph'>
+							</div>";
+					
+					if($x == 7){
+						echo "<div class='room-btn btn-cta'><a href='".get_permalink(get_page_by_title( 'Contact' )->ID)."'>Contact&nbsp;Us</a></div>";
+					} else {
+						echo "<div class='room-btn btn-cta'><a href='http://hotel1599.openhotel.com/results.cfm'>Reserve&nbsp;Now</a></div>";
+					}
+							
+					echo	"<p class='room-paragraph'>
 								".$fields["room_".$x."_paragraph"]."
 							</p>
 							<div class='room-pricing'>

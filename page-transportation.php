@@ -28,7 +28,7 @@ get_header(); ?>
 
 			<div class="body-text body-text--trans">
 				<div class="casa-col--text casa-col--70p">
-					<p class="body-text body-text-sm">Round trip transportation to Casa de los Sueños can be arranged for your convenience. We offer both Gold and Platinum Class transport options. These options are available as an add-on when you make your reservation. You may also contact us for details or to add it them at a later date.</p>
+					<p class="body-text body-text-sm">Round trip transportation to Casa de los Sueños can be arranged for your convenience. We offer both Gold and Platinum Class transport options. These options are available as an add-on when you make your reservation. You may also contact us at <a href="mailto:reservations@casasuenos.com">reservations@casasuenos.com</a> for details or to add it them at a later date.</p>
 					<p class="body-text body-text-title">Round Trip Gold Transportation</p>
 					<p class="body-text body-text-sm">Upon arrival to the Cancun International airport, our Gold transportation guests will be greeted by a travel agent holding a place card with their name.<br/>
 						Guests will be transported directly to the Ferry, where the agent will give you round trip tickets.  Please put these tickets in a safe place, for your return trip. The trip over to the island is only 15 minutes.<br/>
