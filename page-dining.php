@@ -89,7 +89,7 @@ get_header(); ?>
 								Open Daily:  5:00 PM - 10:00 PM
 							</div>
 							<div class="room-row room-row--header">
-								Closed on Monays during low season (May - Dec.)
+								Closed on Mondays during low season (May - Dec.)
 							</div>
 						</div>
 					</div>
@@ -98,11 +98,8 @@ get_header(); ?>
 			<div class="border-wave"></div>
 			<div class="casa-row clear casa-row--dining4">
 			    <div class="casa-col--bg"></div>
-			    <div class="casa-col--text casa-col--40p casa-col--pattern-blue clear">
-			        <h2 class="home-header2 margin-b-0 font-sacramento">Menus</h2>
-			        <p class="body-col-btn"><a href="#">APPETIZER</a></p>
-			        <p class="body-col-btn"><a href="#">DINNER</a></p>
-			        <p class="body-col-btn"><a href="#">DESSERTS</a></p>
+			    <div class="casa-col--text casa-col--40p casa-col--minh20 casa-col--pattern-blue clear">
+			        <h2 class="home-header2 font-sacramento pdf-link"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf" target="_blank">Menus</a></h2>
 			    </div>
 			</div>
 

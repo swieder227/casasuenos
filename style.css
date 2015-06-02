@@ -52,6 +52,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## btn-cta
 	## header-reserve-now
 	## pattern-overlay
+	## pdf-link
 # Casa Row/Col
 # Homepage-Specific
 # Rooms-Specific
@@ -1601,6 +1602,18 @@ object {
 	width: 15rem;
 }
 
+/* #pdf-link : links to pdf, used in casa-col; */
+
+.pdf-link {
+	padding: 5rem 0;
+}
+
+.pdf-link a,
+.pdf-link a:hover,
+.pdf-link a:visited,
+.pdf-link a:focus {
+	color: white;
+}
 
 /*----------------------------------------------------------
 	# Casa Row/Col

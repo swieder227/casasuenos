@@ -40,9 +40,8 @@ get_header(); ?>
 			<div class="border-wave"></div>
 			<div class="casa-row clear casa-row--spa2">
 			    <div class="casa-col--bg"></div>
-			    <div class="casa-col--text casa-col--30p casa-col--minh20 casa-col--pattern-blue clear">
-			        <h2 class="home-header2 font-sacramento">Spa</h2>
-			        <p class="body-col-btn"><a href="#">TREATMENT MENU</a></p>
+			    <div class="casa-col--text casa-col--30p casa-col--pattern-blue clear">
+			        <h2 class="home-header2 font-sacramento pdf-link"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Spa-Menu.pdf" target="_blank">Spa Menu</a></h2>
 			    </div>
 			</div>
 		</main><!-- #main -->
