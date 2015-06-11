@@ -15,9 +15,9 @@ get_header(); ?>
 		<div class="page-topimg page-topimg--amen">
 			<div class="toptabs-contain">
 				<div class="toptabs">
-					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
-					<div class="toptab font-sacramento active"><a href="<?php echo get_permalink(get_page_by_title( 'Amenities' )->ID) ?>">amenities</a></div>
-					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Transportation' )->ID) ?>">transportation</a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(getLocalePageID( 'rooms' )) ?>"><?php _e( 'rooms', 'casasuenos' );?></a></div>
+					<div class="toptab font-sacramento active"><a href="<?php echo get_permalink(getLocalePageID( 'amenities' )) ?>"><?php _e( 'amenities', 'casasuenos' );?></a></div>
+					<div class="toptab font-sacramento"><a href="<?php echo get_permalink(getLocalePageID( 'transportation' )) ?>"><?php _e( 'transportation', 'casasuenos' );?></a></div>
 				</div>
 			</div>
 		</div>
@@ -42,7 +42,7 @@ get_header(); ?>
 			<div class="casa-row clear reserve--amen">
 				<div class="casa-col--bg"></div>
 				<div class="casa-col--text casa-col--right casa-col--pattern-yellow">
-					<p class="header-reserve-now"><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'>Reserve<br/>Now</a></p>
+					<p class="header-reserve-now"><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'><?php _e( 'Reserve', 'casasuenos' );?><br/><?php _e( 'Now', 'casasuenos' );?></a></p>
 				</div>
 			</div>
 

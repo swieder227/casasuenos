@@ -36,10 +36,10 @@
 					<div></div>
 				</button>
 				<!-- Main Menu -->
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu', 'container_class' => 'menu-all-pages-container menu-all-pages-container--'.get_locale() ) ); ?>
 				<!-- Additional Buttons -->
-				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="http://hotel1599.openhotel.com/results.cfm">reservations</a></div>
-				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
+				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="http://hotel1599.openhotel.com/results.cfm"><?php _e( 'reservations', 'casasuenos' );?></a></div>
+				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(getLocalePageID( 'rooms' )) ?>"><?php _e( 'rooms', 'casasuenos' );?></a></div>
 			</nav><!-- #site-navigation -->
 		</div>
 	</header><!-- #masthead -->
@@ -51,7 +51,7 @@
 			<div></div>
 		</button>
 		<div class="main-navigation main-navigation-sticky">
-			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="http://hotel1599.openhotel.com/results.cfm">reservations</a></div>
+			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="http://hotel1599.openhotel.com/results.cfm"><?php _e( 'reservations', 'casasuenos' );?></a></div>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-sticky' ) ); ?>
 		</div>
 	</div>

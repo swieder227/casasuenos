@@ -30,6 +30,7 @@ function casasuenos_setup() {
 	 */
 	load_theme_textdomain( 'casasuenos', get_template_directory() . '/languages' );
 
+
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -138,3 +139,9 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Function lookup for page->ID based on language
+ */
+require get_template_directory() . '/localebased_page_ids.php';
+

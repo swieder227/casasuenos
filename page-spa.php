@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="page-topimg page-topimg--spa">
 			<div class="toptabs-contain">
 				<div class="toptabs">
-					<div class="toptab font-sacramento active"><a href="#">spa</a></div>
+					<div class="toptab font-sacramento active"><a href="#"><?php _e( 'spa', 'casasuenos' );?></a></div>
 				</div>
 			</div>
 		</div>
@@ -26,14 +26,14 @@ get_header(); ?>
 			<div class="casa-row casa-row--nopad">
 				<div class="casa-col casa-col--text clear casa-col--100p">
 					<p class="body-text body-text--active">
-						Welcome to the spa in Casa del los Sueños. Our tranquil spa gives is nestled with a gorgeous brick-arched ceiling and smooth wooden flooring. With an eye on promoting true pampering and special attention we offer a select range of massage and acupuncture treatments. This serene and exclusive environment will have you relaxed as our well-trained and skilled therapists work to pamper you.
+						<?php _e( 'Welcome to the spa in Casa del los Sueños. Our tranquil spa gives is nestled with a gorgeous brick-arched ceiling and smooth wooden flooring. With an eye on promoting true pampering and special attention we offer a select range of massage and acupuncture treatments. This serene and exclusive environment will have you relaxed as our well-trained and skilled therapists work to pamper you.', 'casasuenos' );?>
 					</p>
 					<p class="body-text body-text--active">
 						<?php
-							$fields = get_fields( get_page( get_page_by_title( 'Spa' ) ) );
+							$fields = get_fields();
 							$email = $fields['email_contact'];
 						?>
-						<b>For reservations:</b> <?php echo "<a class='' href='$email' target='_blank'>$email</a>" ?>
+						<b><?php _e( 'For reservations', 'casasuenos' );?>:</b> <?php echo "<a class='' href='$email' target='_blank'>$email</a>" ?>
 					</p>
 				</div>
 			</div>
@@ -41,7 +41,9 @@ get_header(); ?>
 			<div class="casa-row clear casa-row--spa2">
 			    <div class="casa-col--bg"></div>
 			    <div class="casa-col--text casa-col--30p casa-col--pattern-blue clear">
-			        <h2 class="home-header2 font-sacramento pdf-link"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Spa-Menu.pdf" target="_blank">Spa Menu</a></h2>
+			        <h2 class="home-header2 font-sacramento pdf-link">
+			        	<a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Spa-Menu.pdf" target="_blank"><?php _e( 'Spa Menu', 'casasuenos' );?></a>
+		        	</h2>
 			    </div>
 			</div>
 		</main><!-- #main -->

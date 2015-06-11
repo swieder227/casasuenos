@@ -1401,7 +1401,7 @@ object {
 	.page-topimg {
 		min-height: 350px;
 	}
-	.menu-all-pages-container {
+	#site-navigation .menu-all-pages-container {
 		height: 273px !important; /* these 2 types are linked, so it's important to put them together. overrides larger media query */
 	}
 }

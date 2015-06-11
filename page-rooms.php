@@ -15,9 +15,9 @@ get_header(); ?>
 		<div class="page-topimg page-topimg--rooms">
 			<div class="toptabs-contain">
 				<div class="toptabs">
-				<div class="toptab font-sacramento active"><a href="<?php echo get_permalink(get_page_by_title( 'Rooms' )->ID) ?>">rooms</a></div>
-				<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Amenities' )->ID) ?>">amenities</a></div>
-				<div class="toptab font-sacramento"><a href="<?php echo get_permalink(get_page_by_title( 'Transportation' )->ID) ?>">transportation</a></div>
+				<div class="toptab font-sacramento active"><a href="<?php echo get_permalink(getLocalePageID( 'rooms' )) ?>"><?php _e( 'rooms', 'casasuenos' );?></a></div>
+				<div class="toptab font-sacramento"><a href="<?php echo get_permalink(getLocalePageID( 'amenities' )) ?>"><?php _e( 'amenities', 'casasuenos' );?></a></div>
+				<div class="toptab font-sacramento"><a href="<?php echo get_permalink(getLocalePageID( 'transportation' )) ?>"><?php _e( 'transportation', 'casasuenos' );?></a></div>
 				</div>
 			</div>
 		</div>
@@ -28,7 +28,19 @@ get_header(); ?>
 
 			<div id="rooms-accent" class="casa-row casa-row--nopad">
 				<div class="casa-col--text casa-col--70p">
-					<p class="body-text body-text--rooms">Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views. Please also check out our <a href="<?php echo get_permalink(get_page_by_title( 'Amenities' )->ID) ?>">Amenities & Service</a> link for a full list of our amenities and services that are available. Click here for airport <a href="<?php echo get_permalink(get_page_by_title( 'Transportation' )->ID) ?>">transportation</a> options.</p>
+					<?php 
+						$url_amenities = get_permalink(getLocalePageID( "amenities" ));
+						$url_transport = get_permalink(getLocalePageID( "transportation" ));
+					?>
+					<p class="body-text body-text--rooms">
+
+					<?php _e( 'Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views.', 'casasuenos' );?> 
+
+					<?php printf(__( 'Please also check out our <a href="%1$s">Amenities & Service</a> link for a full list of our amenities and services that are available. ', 'casasuenos' ), $url_amenities);?>
+
+					<?php printf(__( 'Click here for airport <a href="%1$s">transportation</a> options.', 'casasuenos' ), $url_transport);?>
+
+					</p>
 				</div>
 				<div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
 			</div>
@@ -40,24 +52,24 @@ get_header(); ?>
 				*/
 
 				// ACF Object (advanced custom fields)
-				$fields = get_fields($rooms_data->ID);
+				$fields = get_fields();
 
 				// Helper Functions to get title
 				function get_room_title($index){
 					if($index == 1){
-							return "<span class='font-sacramento'>Presidential</span>&nbsp; SUITE";
+							return "<span class='font-sacramento'>".__('Presidential', 'casasuenos')."</span>&nbsp; ".__('SUITE', 'casasuenos');
 					} elseif ($index == 2) {
-							return "<span class='font-sacramento'>Serenity Jacuuzzi</span>&nbsp; SUITE";
+							return "<span class='font-sacramento'>".__('Serenity Jacuuzzi', 'casasuenos')."</span>&nbsp; ".__('SUITE', 'casasuenos');
 					} elseif ($index == 3) {
-							return "<span class='font-sacramento'>Ocean View</span>&nbsp; KING&nbsp;SUITES";
+							return "<span class='font-sacramento'>".__('Ocean View', 'casasuenos')."</span>&nbsp; ".__('KING&nbsp;SUITES', 'casasuenos');
 					} elseif ($index == 4) {
-							return "<span class='font-sacramento'>Ocean View</span>&nbsp; VILLA&nbsp;DOUBLE";
+							return "<span class='font-sacramento'>".__('Ocean View', 'casasuenos')."</span>&nbsp; ".__('VILLA&nbsp;DOUBLE', 'casasuenos');
 					} elseif ($index == 5) {
-							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;KING";
+							return "<span class='font-sacramento'>".__('Economy', 'casasuenos')."</span>&nbsp; ".__('VILLA&nbsp;KING', 'casasuenos');
 					} elseif ($index == 6) {
-							return "<span class='font-sacramento'>Economy</span>&nbsp; VILLA&nbsp;DOUBLE";
+							return "<span class='font-sacramento'>".__('Economy', 'casasuenos')."</span>&nbsp; ".__('VILLA&nbsp;DOUBLE', 'casasuenos');
 					} elseif ($index == 7) {
-							return "<span class='font-sacramento'>Rent the Whole Casa</span>";
+							return "<span class='font-sacramento'>".__('Rent the Whole Casa', 'casasuenos')."</span>";
 					}
 				}
 
@@ -75,7 +87,7 @@ get_header(); ?>
 							</div>";
 					
 					if($x == 7){
-						echo "<div class='room-btn btn-cta'><a href='".get_permalink(get_page_by_title( 'Contact' )->ID)."'>Contact&nbsp;Us</a></div>";
+						echo "<div class='room-btn btn-cta'><a href='".get_permalink(getLocalePageID( 'contact' ))."'>Contact&nbsp;Us</a></div>";
 					} else {
 						echo "<div class='room-btn btn-cta'><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'>Reserve&nbsp;Now</a></div>";
 					}
@@ -85,9 +97,9 @@ get_header(); ?>
 							</p>
 							<div class='room-pricing'>
 								<div class='room-row room-row--header clear'>
-									<div class='room-price-col'>RATES</div>
-									<div class='room-price-col'>REGULAR SEASON</div>
-									<div class='room-price-col'>HOLIDAY 12/22&nbsp;-&nbsp;1/4</div>
+									<div class='room-price-col'>".__('RATES', 'casasuenos')."</div>
+									<div class='room-price-col'>".__('REGULAR SEASON', 'casasuenos')."</div>
+									<div class='room-price-col'>".__('HOLIDAY', 'casasuenos')." 12/22&nbsp;-&nbsp;1/4</div>
 								</div>
 								<div class='room-row clear'>
 									<div class='room-price-col'>".$fields["room_".$x."_date_1"]."</div>
@@ -100,7 +112,7 @@ get_header(); ?>
 									<div class='room-price-col'>$".$fields["room_".$x."_date_2_priceholiday"]." USD</div>
 								</div>
 								<div class='room-row clear'>
-									<div class='room-fineprint'>All rooms subject to 19% tax</div>
+									<div class='room-fineprint'>".__( 'All rooms subject to 19% tax.', 'casasuenos' )."</div>
 								</div>
 							</div>
 						</div>
@@ -116,7 +128,7 @@ get_header(); ?>
 			<div class="casa-row clear reserve--rooms">
 				<div class="casa-col--bg"></div>
 				<div class="casa-col--text casa-col--right casa-col--pattern-yellow">
-					<p class="header-reserve-now"><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'>Reserve<br/>Now</a></p>
+					<p class="header-reserve-now"><a target='_blank' href='http://hotel1599.openhotel.com/results.cfm'><?php _e( 'Reserve', 'casasuenos' );?><br/><?php _e( 'Now', 'casasuenos' );?></a></p>
 				</div>
 			</div>
 
