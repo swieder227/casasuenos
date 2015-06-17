@@ -1,0 +1,701 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: casasuenos\n"
+"POT-Creation-Date: 2015-06-17 16:54-0500\n"
+"PO-Revision-Date: 2015-06-17 16:53-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid "Return to the home page"
+msgstr ""
+
+#: front-page.php:29
+msgid "Welcome"
+msgstr ""
+
+#: front-page.php:30
+msgid ""
+"Breathtaking views and an inviting atmosphere are the hallmarks of this "
+"beautiful boutique hotel. With a warm and attentive staff, Casa de los "
+"Sueños will strive to discover and fulfill your every need and wish."
+msgstr ""
+
+#: front-page.php:38
+msgid "Tropical"
+msgstr ""
+
+#: front-page.php:39
+msgid "Dreams"
+msgstr ""
+
+#: front-page.php:40
+msgid ""
+"From the moment you walk through the door, Casa de los Sueños radiates "
+"tranquility, peace and a sense of “home.” With nine ocean view suites and a "
+"Presidential Suite, \n"
+"\t\t\t\t\tCasa de los Sueños is the answer to a dream vacation, whether you "
+"are planning a family reunion, a destination wedding in Mexico, or an "
+"exclusive and relaxing retreat."
+msgstr ""
+
+#: front-page.php:42
+msgid "click to reserve"
+msgstr ""
+
+#: front-page.php:49
+msgid "Paradise"
+msgstr ""
+
+#: front-page.php:50
+msgid "Awaits"
+msgstr ""
+
+#: front-page.php:51
+msgid ""
+"Located on Isla Mujeres, Casa de los Sueños offers a range of activities in "
+"our secluded location for you to enjoy, and is an ideal base camp from which "
+"to explore the beautiful and authentic community located on the island."
+msgstr ""
+
+#: front-page.php:52
+msgid "click for adventure"
+msgstr ""
+
+#: front-page.php:60
+msgid "Indulge"
+msgstr ""
+
+#: front-page.php:61
+msgid "In Taste"
+msgstr ""
+
+#: front-page.php:62
+msgid ""
+"The top spot to enjoy the evening. Casa de los Sueños provides a sanctuary "
+"on the southern end of the island. Home of two great restaurants, featuring "
+"fresh ingredients, local music, and happy hour specials."
+msgstr ""
+
+#: front-page.php:63 page-activities.php:58
+msgid "see more"
+msgstr ""
+
+#: functions.php:54
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:89
+msgid "Sidebar"
+msgstr ""
+
+#: header.php:22
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:41 header.php:54
+msgid "reservations"
+msgstr ""
+
+#: header.php:42 page-amenities.php:18 page-rooms.php:18
+#: page-transportation.php:18
+msgid "rooms"
+msgstr ""
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:23
+msgid "Posts navigation"
+msgstr ""
+
+#: inc/template-tags.php:27
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:31
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:56
+msgid "Post navigation"
+msgstr ""
+
+#: inc/template-tags.php:86
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#: inc/template-tags.php:91
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:108 inc/template-tags.php:114
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:110
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#: inc/template-tags.php:116
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:126
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:143
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:145
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:147
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:149
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:151
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:151
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:153
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:153
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:156
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:158
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:160
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:162
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:164
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:166
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:168
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:170
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:172
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:175
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:179
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:181
+msgid "Archives"
+msgstr ""
+
+#: page-activities.php:17
+msgid "activities"
+msgstr ""
+
+#: page-activities.php:29
+msgid ""
+"Whether you feel like biking around the island or lounging by the pool, Casa "
+"de los Sueños offers a range of activities to ensure your visit with us is "
+"an extraordinary experience! We also offer hotel guests deeply discounted "
+"passes to our Parque located adjacent to the hotel with kayaking, paddle "
+"boarding, snorkeling, zip-line, slides, and more."
+msgstr ""
+
+#: page-activities.php:32
+msgid ""
+"Isla Mujeres is a unique place; it is a small peaceful, island less than "
+"five miles long (8 km approx.) just a 20 minute boat ride from Cancun. This "
+"beautiful island combines the beauty of the Caribbean, the dense tropical "
+"jungle and the wonderful heritage of the Mayan civilization. It stands out "
+"as one of Mexico’s natural treasures, a truly delightful paradise on earth. "
+"Isla Mujeres has a lot to offer. You will find specialty,international, and "
+"regional restaurants, beaches, Caribbean shows, swimming with dolphins, "
+"Whale Sharks watching (May thru September), turtle refuge and much more. We "
+"encourage you to explore the beautiful tropical island around you."
+msgstr ""
+
+#: page-activities.php:40
+msgid "Bikes"
+msgstr ""
+
+#: page-activities.php:41
+msgid ""
+"Grab one of the Casa’s bikes and explore the island. Each bike is equipped "
+"with a basket for your convenience and a bike lock will be provided by our "
+"concierge. A great way to tour the authentic island sites and exercise."
+msgstr ""
+
+#: page-activities.php:48
+msgid "Pool"
+msgstr ""
+
+#: page-activities.php:49
+msgid ""
+"Swim or relax by our gorgeous infinity pool, located in the main hotel on a "
+"stunning open-air terrace. This pool is reserved exclusively for hotel "
+"guests. Access to the main pool in the Parque, with swim-up bar and "
+"appetizer tables, is included as well."
+msgstr ""
+
+#: page-activities.php:57
+#, php-format
+msgid ""
+"Ready for some fun? The Casa’s adventurous-side is Parque de los Suenos. "
+"Located on the lower part of the property, head to the Parque for island "
+"adventure. All hotel guests can access the main pool, swim-up bar, and "
+"private deck without cost. A 50% discount to the Parque is available for "
+"those who wish to engage in other water activities."
+msgstr ""
+
+#: page-amenities.php:19 page-rooms.php:19 page-transportation.php:19
+msgid "amenities"
+msgstr ""
+
+#: page-amenities.php:20 page-rooms.php:20 page-transportation.php:20
+msgid "transportation"
+msgstr ""
+
+#: page-amenities.php:45 page-rooms.php:131 page-transportation.php:51
+msgid "Reserve"
+msgstr ""
+
+#: page-amenities.php:45 page-rooms.php:131 page-transportation.php:51
+msgid "Now"
+msgstr ""
+
+#: page-contact.php:17
+msgid "contact"
+msgstr ""
+
+#: page-dining.php:17
+msgid "dining"
+msgstr ""
+
+#: page-dining.php:37
+msgid "At Casa de los Sueños, we have two great restaurants:"
+msgstr ""
+
+#: page-dining.php:40
+msgid "Parque de los Sueños Bar & Grill"
+msgstr ""
+
+#: page-dining.php:42
+msgid "Rêves: Oceanfront Fusion Cusine."
+msgstr ""
+
+#: page-dining.php:45
+msgid "Happy Hour:"
+msgstr ""
+
+#: page-dining.php:48
+msgid "Daily"
+msgstr ""
+
+#: page-dining.php:60
+msgid "BAR &amp;&nbsp;GRILL"
+msgstr ""
+
+#: page-dining.php:63
+msgid ""
+"provides the best breakfast and lunch on the island. Enjoy a meal and take "
+"in the breathtaking Caribbean waters that stretch from our rustic pier "
+"towards the shores of Cancún. A delectable brunch menu that mixes tapas "
+"plates, local classics, and traditional bar food with strong seafood "
+"influences."
+msgstr ""
+
+#: page-dining.php:67
+msgid "Open Daily:  8:00AM - 4:00PM"
+msgstr ""
+
+#: page-dining.php:70
+msgid "Brunch:  8:00AM - 4:00PM"
+msgstr ""
+
+#: page-dining.php:85
+msgid ""
+"is the newest culinary triumph of Ramon, the Head Chef for Casa de los "
+"Sueños. Sample incredible contemporary fusion plates with influences across "
+"the Caribbean, Yucatan, and beyond. Dishes are created with the finest "
+"ingredients, freshest seafood, and choicest cuts. The top spot to enjoy the "
+"evening ocean and lifestyle on the southern end of the island."
+msgstr ""
+
+#: page-dining.php:89
+msgid "Open Daily:  5:00 PM - 10:00 PM"
+msgstr ""
+
+#: page-dining.php:92
+msgid "Closed on Mondays during low season (May - Dec.)"
+msgstr ""
+
+#: page-dining.php:102
+msgid "Menus"
+msgstr ""
+
+#: page-events.php:17 page-wedding.php:17
+msgid "weddings"
+msgstr ""
+
+#: page-events.php:18 page-wedding.php:18
+msgid "events"
+msgstr ""
+
+#: page-events.php:27
+msgid "EVENTS"
+msgstr ""
+
+#: page-events.php:28
+msgid ""
+"Casa de los Sueños is an incredible location to stage your special event. We "
+"can cater to a host of different occasions such as: conferences, speaking "
+"events, fundraisers, special dinners, family reunions, yoga retreats, and "
+"more. Our beautiful tropical locale and attentive staff will enhance your "
+"special event and thrill your guests. Isla Mujeres also offers a variety of "
+"activities for your guests to enjoy in their downtime."
+msgstr ""
+
+#: page-events.php:29
+msgid "For any event Casa de los Suenos offers:"
+msgstr ""
+
+#: page-events.php:31
+msgid "Hotel"
+msgstr ""
+
+#: page-events.php:32
+msgid "Restaurant"
+msgstr ""
+
+#: page-events.php:33
+msgid "Excellent Service"
+msgstr ""
+
+#: page-events.php:34
+msgid "Upscale Food"
+msgstr ""
+
+#: page-events.php:35
+msgid "Custom Cocktails"
+msgstr ""
+
+#: page-events.php:36
+msgid "Wedding Planner"
+msgstr ""
+
+#: page-events.php:37
+msgid "Minister Services"
+msgstr ""
+
+#: page-events.php:38
+msgid "Variety of Entertainment Options"
+msgstr ""
+
+#: page-events.php:39
+msgid "Wedding Decor/Flowers/Cake"
+msgstr ""
+
+#: page-events.php:40
+msgid "Professional Photography"
+msgstr ""
+
+#: page-events.php:41
+msgid "Wedding Packages"
+msgstr ""
+
+#: page-events.php:43
+msgid ""
+"Send us a message right now, email us (<a href=\"mailto:"
+"reservations@casasuenos.com\">reservations@casasuenos.com</a>) or call us, "
+"US Toll free 877-372-3993 or in Mexico at (+52) 998-888-0370 for more "
+"information."
+msgstr ""
+
+#: page-gallery.php:17
+msgid "gallery"
+msgstr ""
+
+#: page-rooms.php:37
+msgid ""
+"Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa "
+"de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium "
+"linens and soaps, purified drinking water, and of course, our famous "
+"tropical island views."
+msgstr ""
+
+#: page-rooms.php:39
+#, php-format
+msgid ""
+"Please also check out our <a href=\"%1$s\">Amenities & Service</a> link for "
+"a full list of our amenities and services that are available. "
+msgstr ""
+
+#: page-rooms.php:41
+#, php-format
+msgid "Click here for airport <a href=\"%1$s\">transportation</a> options."
+msgstr ""
+
+#: page-rooms.php:60
+msgid "Presidential"
+msgstr ""
+
+#: page-rooms.php:60 page-rooms.php:62
+msgid "SUITE"
+msgstr ""
+
+#: page-rooms.php:62
+msgid "Serenity Jacuuzzi"
+msgstr ""
+
+#: page-rooms.php:64 page-rooms.php:66
+msgid "Ocean View"
+msgstr ""
+
+#: page-rooms.php:64
+msgid "KING&nbsp;SUITES"
+msgstr ""
+
+#: page-rooms.php:66 page-rooms.php:70
+msgid "VILLA&nbsp;DOUBLE"
+msgstr ""
+
+#: page-rooms.php:68 page-rooms.php:70
+msgid "Economy"
+msgstr ""
+
+#: page-rooms.php:68
+msgid "VILLA&nbsp;KING"
+msgstr ""
+
+#: page-rooms.php:72
+msgid "Rent the Whole Casa"
+msgstr ""
+
+#: page-rooms.php:100
+msgid "RATES"
+msgstr ""
+
+#: page-rooms.php:101
+msgid "REGULAR SEASON"
+msgstr ""
+
+#: page-rooms.php:102
+msgid "HOLIDAY"
+msgstr ""
+
+#: page-rooms.php:115
+msgid "All rooms subject to 19% tax."
+msgstr ""
+
+#: page-spa.php:17
+msgid "spa"
+msgstr ""
+
+#: page-spa.php:29
+msgid ""
+"Welcome to the spa in Casa del los Sueños. Our tranquil spa gives is nestled "
+"with a gorgeous brick-arched ceiling and smooth wooden flooring. With an eye "
+"on promoting true pampering and special attention we offer a select range of "
+"massage and acupuncture treatments. This serene and exclusive environment "
+"will have you relaxed as our well-trained and skilled therapists work to "
+"pamper you."
+msgstr ""
+
+#: page-spa.php:36
+msgid "For reservations"
+msgstr ""
+
+#: page-spa.php:45
+msgid "Spa Menu"
+msgstr ""
+
+#: page-transportation.php:31
+msgid ""
+"Round trip transportation to Casa de los Sueños can be arranged for your "
+"convenience. We offer both Gold and Platinum Class transport options. These "
+"options are available as an add-on when you make your reservation. You may "
+"also contact us at <a href=\"mailto:reservations@casasuenos.com"
+"\">reservations@casasuenos.com</a> for details or to add them at a later "
+"date."
+msgstr ""
+
+#: page-transportation.php:32
+msgid "Round Trip Gold Transportation"
+msgstr ""
+
+#: page-transportation.php:33
+msgid ""
+"Upon arrival to the Cancun International airport, our Gold transportation "
+"guests will be greeted by a travel agent holding a place card with their "
+"name.<br/>\n"
+"\t\t\t\t\t\tGuests will be transported directly to the Ferry, where the "
+"agent will give you round trip tickets.  Please put these tickets in a safe "
+"place, for your return trip. The trip over to the island is only 15 minutes."
+"<br/>\n"
+"\t\t\t\t\t\t<br/>Once you arrive, the taxi promenade is accessible to the "
+"left of the Ferry Terminal. You simply need to walk over and indicate to the "
+"driver that their destination is “Casa de Los Sueños”,  the drivers know the "
+"location. Our hotel will pay this fee once you arrive. The same procedure is "
+"followed for your for return trip."
+msgstr ""
+
+#: page-transportation.php:36
+msgid "Gold Round Trip Transportation:"
+msgstr ""
+
+#: page-transportation.php:38
+msgid "Gold One Way Transportation:"
+msgstr ""
+
+#: page-transportation.php:39
+msgid "Round Trip Platinum Transportation"
+msgstr ""
+
+#: page-transportation.php:40
+msgid ""
+"At Cancun airport, our Platinum Transportation Guests will be greeted by a "
+"travel agent holding a place card with their name. They will proceed to a "
+"private yacht where they will be transported in first class style directly "
+"to the pier of Casa de los Sueños. This service may be refunded and altered "
+"to Gold Transportation during inclement weather."
+msgstr ""
+
+#: page-transportation.php:41
+msgid "Platinum Round Trip Transportation:"
+msgstr ""
+
+#: page-wedding.php:58
+msgid "Send us a message right now, email us"
+msgstr ""
+
+#: page-wedding.php:58
+msgid ""
+"or call us, US Toll free 877-372-3993 or in Mexico at (+52) 998-888-0370 for "
+"more information."
+msgstr ""
+
+#: page-wedding.php:60
+msgid "We look forward to hearing from you."
+msgstr ""
+
+#: page-wedding.php:71
+msgid "Call for Packages"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "casasuenos"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Wordpress Theme for Casa De Los Suenos Homepage"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Seth Wieder"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://sethwieder.com"
+msgstr ""

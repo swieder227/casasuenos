@@ -3,28 +3,28 @@
 		
 		$id; 
 
-		if(get_locale() == "es_MX"){
+		if(get_locale() == "es_MX" && function_exists('pll_get_post')){
 			
 			if($page == "rooms"){
-				$id = get_page_by_title( 'Rooms2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Rooms' )->ID, 'es_MX');	
 			} elseif ($page == "amenities") {
-				$id = get_page_by_title( 'Amenities2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Amenities' )->ID, 'es_MX');	
 			} elseif ($page == "transportation") {
-				$id = get_page_by_title( 'Transportation2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Transportation' )->ID, 'es_MX');	
 			} elseif ($page == "activities") {
-				$id = get_page_by_title( 'Activities2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Activities' )->ID, 'es_MX');	
 			} elseif ($page == "dining") {
-				$id = get_page_by_title( 'Dining2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Dining' )->ID, 'es_MX');	
 			} elseif ($page == "spa") {
-				$id = get_page_by_title( 'Spa2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Spa' )->ID, 'es_MX');	
 			} elseif ($page == "weddings") {
-				$id = get_page_by_title( 'Weddings & Events2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Weddings & Events' )->ID, 'es_MX');	
 			} elseif ($page == "events") {
-				$id = get_page_by_title( 'Events2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Events' )->ID, 'es_MX');	
 			} elseif ($page == "gallery") {
-				$id = get_page_by_title( 'Gallery2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Gallery' )->ID, 'es_MX');	
 			} elseif ($page == "contact") {
-				$id = get_page_by_title( 'Contact2' )->ID;	
+				$id = pll_get_post(get_page_by_title( 'Contact' )->ID, 'es_MX');	
 			} else {
 				echo "improper page parameter in getLocalePageID()";
 			}	

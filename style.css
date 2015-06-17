@@ -62,6 +62,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Dining-Specific
 # Spa-Specific
 # Wedding-Specific
+# Contact-Specific
 # Footer
 --------------------------------------------------------------*/
 
@@ -2120,6 +2121,13 @@ object {
 
 ul.body-text--events {
 	padding-left: 1em;
+}
+
+/*--------------------------------------------------------------
+# Contact-Specific
+--------------------------------------------------------------*/
+.wpcf7-response-output {
+	color: black;
 }
 
 /*--------------------------------------------------------------
