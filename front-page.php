@@ -25,7 +25,7 @@ get_header(); ?>
 			<div class="border-wave"></div>
 			<div class="casa-row casa-row--nopad clear" id="home-welcome">
 	        <div class="casa-col--bg"></div>
-	        <div class="casa-col--text casa-col--70p clear">
+	        <div class="casa-col--text casa-col--60p clear">
 	            <h2 class="home-header2 font-sacramento">&mdash;&nbsp;<?php _e( 'Welcome', 'casasuenos' );?>&nbsp;&mdash;</h2>
 	            <p class="home-paragraph"><?php _e( 'Breathtaking views and an inviting atmosphere are the hallmarks of this beautiful boutique hotel. With a warm and attentive staff, Casa de los Sueños will strive to discover and fulfill your every need and wish.', 'casasuenos' );?></p>
 	        </div>

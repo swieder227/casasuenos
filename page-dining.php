@@ -39,7 +39,7 @@ get_header(); ?>
 					<p class="body-text body-text--dining2">
 						<b><?php _e( 'Parque de los Sueños Bar & Grill', 'casasuenos' );?></b>
 						<br/>
-						<b><?php _e( 'Rêves: Oceanfront Fusion Cusine.', 'casasuenos' );?></b>
+						<b><?php _e( 'Rêves: Oceanfront Fusion Cusine', 'casasuenos' );?></b>
 					</p>
 					<p class="body-text body-text--dining3">
 						<?php _e( 'Happy Hour:', 'casasuenos' );?>
@@ -70,6 +70,7 @@ get_header(); ?>
 								<?php _e( 'Brunch:  8:00AM - 4:00PM', 'casasuenos' );?>
 							</div>
 						</div>
+						<!-- <div class="btn-cta btn-cta--din-standalone"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf">Menu</a></div> -->
 					</div>
 				</div>
 			</div>
@@ -88,10 +89,8 @@ get_header(); ?>
 							<div class="room-row room-row--header">
 								<?php _e( 'Open Daily:  5:00 PM - 10:00 PM', 'casasuenos' );?>
 							</div>
-							<div class="room-row room-row--header">
-								<?php _e( 'Closed on Mondays during low season (May - Dec.)', 'casasuenos' );?>
-							</div>
 						</div>
+						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf">Menu</a>
 					</div>
 				</div>
 			</div>
@@ -99,7 +98,7 @@ get_header(); ?>
 			<div class="casa-row clear casa-row--dining4">
 			    <div class="casa-col--bg"></div>
 			    <div class="casa-col--text casa-col--40p casa-col--minh20 casa-col--pattern-blue clear">
-			        <h2 class="home-header2 font-sacramento pdf-link"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf" target="_blank"><?php _e( 'Menus', 'casasuenos' );?></a></h2>
+			        <h2 class="home-header2 font-sacramento pdf-link"><?php _e( 'Ocean View Dining', 'casasuenos' );?></h2>
 			    </div>
 			</div>
 

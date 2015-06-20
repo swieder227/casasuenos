@@ -40,7 +40,7 @@ get_header(); ?>
             <li><?php _e( 'Professional Photography', 'casasuenos' );?></li>
             <li><?php _e( 'Wedding Packages', 'casasuenos' );?></li>
           </ul>
-          <p class="body-text"><?php _e( 'Send us a message right now, email us (<a href="mailto:reservations@casasuenos.com">reservations@casasuenos.com</a>) or call us, US Toll free 877-372-3993 or in Mexico at (+52) 998-888-0370 for more information.', 'casasuenos' );?></p>
+          <p class="body-text"><?php _e( 'For more information send us a message at <a href="mailto:reservations@casasuenos.com">reservations@casasuenos.com</a> or call us, US Toll Free 877-372-3992 or in Mexico at (+52) 998-888-0370.  We look forward to hearing from you.', 'casasuenos' );?></p>
         </div>
         <div class="pattern-overlay pattern-overlay-topextra pattern-overlay-right pattern-overlay-floral"></div>
       </div>

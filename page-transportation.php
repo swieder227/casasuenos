@@ -33,6 +33,7 @@ get_header(); ?>
 					<p class="body-text body-text-sm"><?php _e( 'Upon arrival to the Cancun International airport, our Gold transportation guests will be greeted by a travel agent holding a place card with their name.<br/>
 						Guests will be transported directly to the Ferry, where the agent will give you round trip tickets.  Please put these tickets in a safe place, for your return trip. The trip over to the island is only 15 minutes.<br/>
 						<br/>Once you arrive, the taxi promenade is accessible to the left of the Ferry Terminal. You simply need to walk over and indicate to the driver that their destination is “Casa de Los Sueños”,  the drivers know the location. Our hotel will pay this fee once you arrive. The same procedure is followed for your for return trip.', 'casasuenos' );?></p>
+					<p class="body-text body-text-sm"><?php _e( 'All transportation services must be scheduled 48 hours in advance of arrival.', 'casasuenos' );?></p>
 					<p class="body-text body-text-subtitle"><?php _e( 'Gold Round Trip Transportation:', 'casasuenos' );?> <?php echo $fields['gold_round_price']?>
 					<br>
 						<?php _e( 'Gold One Way Transportation:', 'casasuenos' );?> <?php echo $fields['gold_single_price']?></p>

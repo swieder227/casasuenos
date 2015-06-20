@@ -36,7 +36,7 @@ get_header(); ?>
 
 					<?php _e( 'Enjoy serene and luxurious accommodations in each of our 10 rooms. At Casa de Los Sueños you will enjoy deluxe comforts in all our rooms, like premium linens and soaps, purified drinking water, and of course, our famous tropical island views.', 'casasuenos' );?> 
 
-					<?php printf(__( 'Please also check out our <a href="%1$s">Amenities & Service</a> link for a full list of our amenities and services that are available. ', 'casasuenos' ), $url_amenities);?>
+					<?php printf(__( 'Please also check out our <a href="%1$s">amenities & service</a> tab for a full list of our amenities and services that are available. ', 'casasuenos' ), $url_amenities);?>
 
 					<?php printf(__( 'Click here for airport <a href="%1$s">transportation</a> options.', 'casasuenos' ), $url_transport);?>
 
@@ -59,7 +59,7 @@ get_header(); ?>
 					if($index == 1){
 							return "<span class='font-sacramento'>".__('Presidential', 'casasuenos')."</span>&nbsp; ".__('SUITE', 'casasuenos');
 					} elseif ($index == 2) {
-							return "<span class='font-sacramento'>".__('Serenity Jacuuzzi', 'casasuenos')."</span>&nbsp; ".__('SUITE', 'casasuenos');
+							return "<span class='font-sacramento'>".__('Serenity Jacuzzi', 'casasuenos')."</span>&nbsp; ".__('SUITE', 'casasuenos');
 					} elseif ($index == 3) {
 							return "<span class='font-sacramento'>".__('Ocean View', 'casasuenos')."</span>&nbsp; ".__('KING&nbsp;SUITES', 'casasuenos');
 					} elseif ($index == 4) {
@@ -69,7 +69,7 @@ get_header(); ?>
 					} elseif ($index == 6) {
 							return "<span class='font-sacramento'>".__('Economy', 'casasuenos')."</span>&nbsp; ".__('VILLA&nbsp;DOUBLE', 'casasuenos');
 					} elseif ($index == 7) {
-							return "<span class='font-sacramento'>".__('Rent the Whole Casa', 'casasuenos')."</span>";
+							return "<span class='font-sacramento'>".__('Rent the', 'casasuenos')."</span>&nbsp; ".__('WHOLE&nbsp;CASA', 'casasuenos');
 					}
 				}
 

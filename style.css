@@ -876,12 +876,12 @@ a:active {
 	}
 	.header-btn-extra{
 		position: absolute;
-		bottom: -24px;
+		bottom: -32px;
 		top: auto;
-		height: 24px;
-		line-height: 24px;
+		height: 32px;
+		line-height: 32px;
 		width: 50%;
-		font-size: 24px;
+		font-size: 32px;
 		text-align: center;
 		background-color: rgba(101, 153, 192, 0.85);
 	}
@@ -923,7 +923,7 @@ a:active {
 		top: 77px;
 		height: 373px;
 		width: 100%;
-		padding-top: 24px;
+		padding-top: 32px;
 		pointer-events: none;
 	}
 	.main-navigation li {
@@ -2075,6 +2075,11 @@ object {
 	font-size: 1.2em;
 }
 
+.btn-cta--din-standalone {
+	margin: 2rem 0 0.5rem;
+	display: inline-block;
+}
+
 /*--------------------------------------------------------------
 # Spa-Specific
 --------------------------------------------------------------*/
@@ -2139,9 +2144,9 @@ ul.body-text--events {
 
 .site-footer ul{
 	margin: 0 auto;
-  padding: 60px 0;
-  list-style: none;
-  text-align: center;
+	padding: 60px 0;
+	list-style: none;
+	text-align: center;
 }
 
 .site-footer li{
@@ -2149,6 +2154,12 @@ ul.body-text--events {
 	padding: 5px 20px;
 	text-transform: uppercase;
 	font-weight: 200;
+}
+
+.site-footer a,
+.site-footer a:hover,
+.site-footer a:active {
+	color: #404040;
 }
 
 /*

@@ -19,7 +19,7 @@
 				<li>US Toll free 877-372-3993</li>
 				<li>Mexico 998-888-0369</li>
 				<br>
-				<li>Reservations@casasuenos.com</li>
+				<li><a target="_blank" href="mailto:reservations@casasuenos.com">Reservations@casasuenos.com</a></li>
 			</ul>
 
 			<ul><?php pll_the_languages();?></ul>
