@@ -22,7 +22,7 @@
 				<li><a target="_blank" href="mailto:reservations@casasuenos.com">Reservations@casasuenos.com</a></li>
 			</ul>
 
-			<ul><?php pll_the_languages();?></ul>
+			<ul><?php //pll_the_languages();?></ul>
 
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

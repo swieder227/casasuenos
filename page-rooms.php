@@ -73,6 +73,32 @@ get_header(); ?>
 					}
 				}
 
+				function get_room_divs($index, $name){
+					$numSlides = 4;
+					if($index == 1){ // pres
+						$numSlides = 9;
+					} elseif ($index == 2) { //serenity
+						$numSlides = 6;
+					} elseif ($index == 3) { // ocean king
+						$numSlides = 5;
+					} elseif ($index == 4) { // ocean double
+						$numSlides = 4;
+					} elseif ($index == 5) { // econ king
+						$numSlides = 4;
+					} elseif ($index == 6) { // econ double
+						$numSlides = 4;
+					} elseif ($index == 7) { // whole casa
+						$numSlides = 7;
+					}
+					for ($i=0; $i < $numSlides; $i++) { 
+						if($name == "slides"){
+							echo '<div class="carousel-item" data-slide-index="'.$i.'"></div>';
+						} else {
+							echo '<div class="carousel-dot" data-slide-index="'.$i.'"></div>';
+						}
+					}
+				}
+
 				// Loop, iterating through the fields data into the PHP template
 				for($x = 1; $x <= 7; $x++){
 
@@ -80,7 +106,27 @@ get_header(); ?>
 					echo "
 					<!-- .casa-row -->
 					<div id='room-".$x."' class='room-content casa-row clear'>
-						<div class='casa-col--bg casa-col--40p'></div>
+						<!-- Carousel -->
+						<div class='casa-col--bg casa-col--40p'>
+							<div class='carousel-main carousel-main--".$x."' data-slide-index='0'>
+							    <!-- Slides -->";
+								get_room_divs($x, "slides");
+
+					echo	   "<!-- Controls -->
+							    <div class='carousel-controls'>
+								    <button class='carousel-btn' data-dir='_L'></button>
+
+								    <!-- Dots -->
+								    <div class='carousel-dots'>";
+								        get_room_divs($x, "dots");
+					echo		    "</div>
+
+								    <button class='carousel-btn' data-dir='_R'></button>
+							    </div>
+
+							</div>
+						</div>
+						
 						<div class='casa-col--text casa-col--right casa-col--60p'>
 							<div class='room-title'>
 								".get_room_title($x)."
@@ -134,5 +180,7 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	<?php wp_enqueue_script( 'casasuenos-rooms-carousel', get_template_directory_uri() . '/js/carousel.js', array(), '20150627', true ); ?>
 
 <?php get_footer(); ?>

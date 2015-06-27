@@ -64,7 +64,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Wedding-Specific
 # Contact-Specific
 # Footer
---------------------------------------------------------------*/
+# Carousel
+	## Carousel Slides
 
 /*--------------------------------------------------------------
 # Normalize
@@ -663,14 +664,14 @@ textarea {
 --------------------------------------------------------------*/
 .nav-menu{
 	/*display: -webkit-flex; display: flex;*/
-	-webkit-flex-direction: horizontal; flex-direction: row;
-	-webkit-justify-content: flex-start; justify-content: flex-start;
-	-webkit-align-items: flex-end; align-items: flex-end;
+	-webkit-flex-direction: horizontal; -ms-flex-direction: row; flex-direction: row;
+	-webkit-justify-content: flex-start; -ms-flex-pack: start; justify-content: flex-start;
+	-webkit-align-items: flex-end; -ms-flex-align: end; align-items: flex-end;
 	/*-webkit-flex-wrap: wrap; flex-wrap: wrap;*/
 }
 
 .menu-all-pages-container,
-.nav-menu{
+.nav-menu {
 	height: 100%;
 }
 
@@ -830,9 +831,8 @@ a:active {
 	width: 40px;
 	height: 3px;
 	background: white;
-	-webkit-transition: all 0.3s ease-out 0s;
-	-webkit-transition: background 0.3s ease-out 0s, opacity 0.6s ease-out 0s, -webkit-transform 0.6s cubic-bezier(0.68, -0.55, 0.54, 1.34) 0s;
 	transition: all 0.3s ease-out 0s;
+	transition: background 0.3s ease-out 0s, opacity 0.6s ease-out 0s, -webkit-transform 0.6s cubic-bezier(0.68, -0.55, 0.54, 1.34) 0s;
 	transition: background 0.3s ease-out 0s, opacity 0.6s ease-out 0s, transform 0.6s cubic-bezier(0.68, -0.55, 0.54, 1.34) 0s;
 }
 .menu-toggle > div:first-child{
@@ -908,11 +908,14 @@ a:active {
 	}
 	#site-navigation.toggled ul {
 		display: -webkit-flex;
+		display: -ms-flexbox;
 		display: flex;
 		-webkit-flex-direction: column;
-		flex-direction: column;
+		-ms-flex-direction: column;
+		    flex-direction: column;
 		-webkit-justify-content: space-around;
-		justify-content: space-around;
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		-webkit-animation: opacityIn 0.2s ease-out 1 both;
 		animation: opacityIn 0.2s ease-out 1 both;
 		padding: 10px 0 10px 24px;
@@ -956,6 +959,7 @@ a:active {
 	}
 	#site-navigation ul {
 		display: table;
+		height: 53px;
 	}
 }
 
@@ -1026,7 +1030,7 @@ a:active {
 	z-index: 1;
 	transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
-	-webkit-transition: transform 0.4s ease-out 0s, background 0.4s ease 0s;
+	transition: -webkit-transform 0.4s ease-out 0s, background 0.4s ease 0s;
 	transition: transform 0.4s ease-out 0s, background 0.4s ease 0s;
 }
 .show-sticky .menu-toggle-sticky {
@@ -1057,10 +1061,10 @@ a:active {
 }
 
 .main-navigation-sticky #primary-menu-sticky {
-	display: -webkit-flex; display: flex;
-	-webkit-flex-direction: column; flex-direction: column;
-	-webkit-justify-content: space-around; justify-content: space-around;
-	-webkit-align-items: center; align-items: center;
+	display: -webkit-flex; display: -ms-flexbox; display: flex;
+	-webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
+	-webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around;
+	-webkit-align-items: center; -ms-flex-align: center; align-items: center;
 }
 
 #primary-menu-sticky li,
@@ -1424,9 +1428,9 @@ object {
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
 .page-topimg--trans { background-image: url(imgs/bg_trans_1.jpg); }
 .page-topimg--active { background-image: url(imgs/bg_home_3.jpg); }
-.page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); }
+.page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); background-position: 0% 0%;}
 .page-topimg--spa { background-image: url(imgs/bg_spa_1.jpg); }
-.page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); }
+.page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); background-position: 0% 0%;}
 .page-topimg--events { background-image: url(imgs/bg_events.jpg); }
 .page-topimg--gallery { background-image: url(imgs/bg_gallery.jpg); }
 .page-topimg--contact { background-image: url(imgs/bg_contact.jpg); }
@@ -1447,7 +1451,6 @@ object {
 .toptab {
 	float: left;
 	background-color: rgba(101, 153, 192, 0.8);
-	-webkit-transition: background 0.5s ease-out 0s;
 	transition: background 0.5s ease-out 0s;
 	font-size: 1.5rem;
 	padding: 0.5rem 2rem 0.3rem;
@@ -1566,12 +1569,10 @@ object {
 }
 .header-reserve-now:before{
 	left: 10%;
-	left: -webkit-calc(50% - 2em);
 	left: calc(50% - 2em);
 }
 .header-reserve-now:after{
 	right: 10%;
-	right: -webkit-calc(50% - 2em);
 	right: calc(50% - 2em);
 }
 
@@ -1776,15 +1777,6 @@ object {
 		min-height: 12em;
 	}
 }
-
-/* Rooms thumbnails */
-#room-1 .casa-col--bg{ background-image: url(imgs/rooms_pres.jpg); }
-#room-2 .casa-col--bg{ background-image: url(imgs/rooms_serenity.jpg); }
-#room-3 .casa-col--bg{ background-image: url(imgs/rooms_oceanking.jpg); }
-#room-4 .casa-col--bg{ background-image: url(imgs/rooms_oceandouble.jpg); }
-#room-5 .casa-col--bg{ background-image: url(imgs/rooms_econking.jpg); }
-#room-6 .casa-col--bg{ background-image: url(imgs/rooms_econdouble.jpg); }
-#room-7 .casa-col--bg{ background-image: url(imgs/rooms_casa.jpg); }
 
 #rooms-accent .casa-col--bg {
 	background-image: url(imgs/pattern_yellowstar.png);
@@ -1994,8 +1986,12 @@ object {
 	-moz-column-gap: 0px;
 	-webkit-column-count: 2;
 	-webkit-column-gap: 0px;
-	column-count: 2;
-	column-gap: 0px;
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	        column-count: 2;
+	-webkit-column-gap: 0px;
+	   -moz-column-gap: 0px;
+	        column-gap: 0px;
 }
 @media screen and (max-width: 650px) {
 	.body-text-2col {
@@ -2193,3 +2189,268 @@ ul.body-text--events {
 		padding: 5px 0;
 	}
 }*/
+
+
+/*--------------------------------------------------------------
+# Carousel
+--------------------------------------------------------------*/
+/*
+
+Basic Carousel layout
+
+*/
+
+.carousel-main {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    overflow: hidden;
+}
+.carousel-main.preventDoubleTap {
+    pointer-events:none;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+}
+
+/* 
+
+Animating carousel-items
+
+*/
+
+.carousel-item.active,
+.carousel-item.prev,
+.carousel-item.next {
+    opacity: 1;
+    -webkit-animation-duration: 0.5s;
+            animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    -webkit-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+/* slide("_R") */
+@-webkit-keyframes slideLeftOut {
+    0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
+}
+@keyframes slideLeftOut {
+    0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
+} 
+@-webkit-keyframes slideRightIn {
+    0%   { -webkit-transform: translateX(100%); transform: translateX(100%);}
+    100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
+} 
+@keyframes slideRightIn {
+    0%   { -webkit-transform: translateX(100%); transform: translateX(100%);}
+    100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
+} 
+
+.carousel-item.prev {
+    -webkit-animation-name: slideLeftOut;
+            animation-name: slideLeftOut;
+}
+.carousel-item.active.next {
+    -webkit-animation-name: slideRightIn;
+            animation-name: slideRightIn;
+}
+
+/* slide("_L") */
+@-webkit-keyframes slideRightOut {
+    0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% { -webkit-transform: translateX(100%); transform: translateX(100%);}
+}
+@keyframes slideRightOut {
+    0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
+    100% { -webkit-transform: translateX(100%); transform: translateX(100%);}
+} 
+@-webkit-keyframes slideLeftIn {
+    0%   { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
+    100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
+} 
+@keyframes slideLeftIn {
+    0%   { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
+    100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
+} 
+
+.carousel-item.prev.active {
+    -webkit-animation-name: slideLeftIn;
+            animation-name: slideLeftIn;
+}
+.carousel-item.next {
+    -webkit-animation-name: slideRightOut;
+            animation-name: slideRightOut;
+}
+
+
+/* 
+
+Placeholders
+
+*/
+.carousel-item{
+    background-size: cover;
+    background-position: 50% 50%; 
+}
+
+/*
+
+Buttons
+
+*/
+.carousel-btn {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 3em;
+    background: transparent;
+    outline: 0;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.carousel-btn[data-dir="_L"] {
+    margin-right: 0.5em;
+}
+.carousel-btn[data-dir="_R"] {
+	margin-left: 0.5em;
+}
+
+.carousel-btn[data-dir="_L"]:after,
+.carousel-btn[data-dir="_R"]:after {
+    content: '';
+    width: 0em;
+    height: 0em;
+    position: absolute;
+    margin-top: -1em;
+    border-radius: 0.55em;
+}
+
+.carousel-btn[data-dir="_L"]:after {
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    left: 1em;
+    border-right: 1.5em solid #ffce01;
+}
+
+.carousel-btn[data-dir="_R"]:after {
+    border-top: 1em solid transparent;
+    border-bottom: 1em solid transparent;
+    right: 1em;
+    border-left: 1.5em solid #ffce01;
+}
+
+
+.carousel-btn,
+.carousel-dots {
+	display: inline-block;
+}
+
+
+.carousel-controls {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(101, 153, 192, 0.55);
+	padding: 0.5em;
+}
+
+/*
+
+Dots
+
+*/
+.carousel-dots {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2em;
+    text-align: center;
+}
+
+.carousel-dot {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    background: #ffce01;
+    margin: 0 0.5em;
+    position: relative;
+    top: 0.5em;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+.carousel-dot.active {
+    background: #fff;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/*--------------------------------------------------------------
+## Carousel Slides
+--------------------------------------------------------------*/
+
+.carousel-main--1 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/Pres-1.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/Pres-2.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/Pres-3.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/Pres-4.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="4"] { background-image: url(imgs/rooms/Pres-5.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="5"] { background-image: url(imgs/rooms/Pres-6.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="6"] { background-image: url(imgs/rooms/Pres-7.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="7"] { background-image: url(imgs/rooms/Pres-8.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="8"] { background-image: url(imgs/rooms/Pres-9.gif); }
+
+.carousel-main--2 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/Serenity-1.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/Serenity-2.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/Serenity-3.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/Serenity-4.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="4"] { background-image: url(imgs/rooms/Serenity-5.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="5"] { background-image: url(imgs/rooms/Serenity-6.jpg); }
+
+.carousel-main--3 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/OceanKing-1.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/OceanKing-2.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/OceanKing-3.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/OceanKing-4.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="4"] { background-image: url(imgs/rooms/OceanKing-5.jpg); }
+
+.carousel-main--4 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/OceanDouble-1.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/OceanDouble-2.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/OceanDouble-3.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/OceanDouble-4.jpg); }
+
+.carousel-main--5 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/EconomyKing-1.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/EconomyKing-2.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/EconomyKing-3.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/EconomyKing-4.jpg); }
+
+.carousel-main--6 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/EconDouble-1.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/EconDouble-2.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/EconDouble-3.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/EconDouble-4.jpg); }
+
+.carousel-main--7 .carousel-item[data-slide-index="0"] { background-image: url(imgs/rooms/casa-1.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="1"] { background-image: url(imgs/rooms/casa-2.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="2"] { background-image: url(imgs/rooms/casa-3.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="3"] { background-image: url(imgs/rooms/casa-4.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="4"] { background-image: url(imgs/rooms/casa-5.gif); }
+.carousel-main--7 .carousel-item[data-slide-index="5"] { background-image: url(imgs/rooms/casa-6.gif); }
+.carousel-main--7 .carousel-item[data-slide-index="6"] { background-image: url(imgs/rooms/casa-7.gif); }

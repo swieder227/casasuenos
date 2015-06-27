@@ -70,7 +70,7 @@ get_header(); ?>
 								<?php _e( 'Brunch:  8:00AM - 4:00PM', 'casasuenos' );?>
 							</div>
 						</div>
-						<!-- <div class="btn-cta btn-cta--din-standalone"><a href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf">Menu</a></div> -->
+						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/ParqueSuenos_BarGrill_BrunchMenu.pdf">Menu</a>
 					</div>
 				</div>
 			</div>
