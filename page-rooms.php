@@ -92,7 +92,9 @@ get_header(); ?>
 					}
 					for ($i=0; $i < $numSlides; $i++) { 
 						if($name == "slides"){
-							echo '<div class="carousel-item" data-slide-index="'.$i.'"></div>';
+							echo '<div class="carousel-item" data-slide-index="'.$i.'">
+									<div class="carousel-img"></div>
+								 </div>';
 						} else {
 							echo '<div class="carousel-dot" data-slide-index="'.$i.'"></div>';
 						}
@@ -109,19 +111,26 @@ get_header(); ?>
 						<!-- Carousel -->
 						<div class='casa-col--bg casa-col--40p'>
 							<div class='carousel-main carousel-main--".$x."' data-slide-index='0'>
+							    <!-- Curtain -->
+							    <div class='carousel-curtain js-carousel-curtain'></div>
 							    <!-- Slides -->";
 								get_room_divs($x, "slides");
 
 					echo	   "<!-- Controls -->
 							    <div class='carousel-controls'>
-								    <button class='carousel-btn' data-dir='_L'></button>
+								    <div class='carousel-controls-left'>
+									    <button class='carousel-btn' data-dir='_L'></button>
 
-								    <!-- Dots -->
-								    <div class='carousel-dots'>";
-								        get_room_divs($x, "dots");
-					echo		    "</div>
+									    <!-- Dots -->
+									    <div class='carousel-dots'>";
+								        	get_room_divs($x, "dots");
+					echo		    	"</div>
 
-								    <button class='carousel-btn' data-dir='_R'></button>
+								    	<button class='carousel-btn' data-dir='_R'></button>
+								    </div>
+								    <div class='carousel-controls-right'>
+									    <button class='carousel-fullscreen js-carousel-gofull'></button>
+									</div>  
 							    </div>
 
 							</div>

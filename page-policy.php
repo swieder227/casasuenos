@@ -20,9 +20,9 @@ get_header(); ?>
 
 			<div class="border-wave"></div>
 
-			<div id="rooms-accent" class="casa-row casa-row--nopad">
-				<div class="casa-col--text casa-col--100p">
-					<div class="body-text body-text-sm body-text-2col body-text--amen ">
+			<div class="casa-row casa-row--nopad">
+				<div class="casa-col--text casa-col--70p">
+					<div class="body-text body-text-sm">
 						<?php if (have_posts()) : while (have_posts()) : the_post();?>
 						<?php the_content(); ?>
 						<?php endwhile; endif; ?>

@@ -18,6 +18,7 @@
     this.slide_index;
     this.slide_length;
     this.slide_current_obj;
+    this.isFixed;
 
     this._init();
   };
@@ -40,22 +41,76 @@
       this._setupHandlers();
       // add swipe detection
       this._swipeSetup();
+      // default sate
+      this.isFixed = false;
     },
 
     _setupHandlers : function() {
 
       var self = this;
 
+      // L/R Btns
       var btn_L = this.obj.querySelector(".carousel-btn[data-dir='_L']");
-      btn_L.addEventListener("mousedown", function(){ self._slideLeft() });
+      btn_L.addEventListener("mousedown", function(e){ self._slideLeft(); e.stopPropagation(); });
 
       var btn_R = this.obj.querySelector(".carousel-btn[data-dir='_R']");
-      btn_R.addEventListener("mousedown", function(){ self._slideRight() });
+      btn_R.addEventListener("mousedown", function(e){ self._slideRight(); e.stopPropagation(); });
 
+      // Dots
       var dots = this.obj.querySelectorAll(".carousel-dot");
       for(var i = 0; i < dots.length; i++){
-        dots[i].addEventListener("mousedown", function(){ self._slideJump(this.getAttribute("data-slide-index")) });
+        dots[i].addEventListener("mousedown", function(e){ self._slideJump(this.getAttribute("data-slide-index")); e.stopPropagation(); });
       }
+
+      // Fullscreen
+      var btnFullscreen = this.obj.querySelector(".js-carousel-gofull");
+      btnFullscreen.addEventListener("mousedown", function(e){ 
+        if (self.obj.classList) {
+          self.obj.classList.toggle("fixed");
+        } else {
+          var classes = self.obj.className.split(' ');
+          var existingIndex = classes.indexOf("fixed");
+
+          if (existingIndex >= 0)
+            classes.splice(existingIndex, 1);
+          else
+            classes.push("fixed");
+
+          self.obj.className = classes.join(' ');
+        }
+        self.isFixed = !self.isFixed;
+        e.stopPropagation();
+      });
+
+      // Exit fullscreen
+      var curtain = this.obj.querySelector(".js-carousel-curtain");
+      curtain.addEventListener("mousedown", function(){
+        if(self.isFixed){
+          self.obj.className = self.obj.className.replace(/(^| )fixed/,"");
+          self.isFixed = false;
+        }
+      });
+
+      // Keypresses
+      document.addEventListener("keydown", function(e){
+        if(self.isFixed){
+          e = e || window.event;
+
+          if (e.keyCode == '27') {
+              // escape
+              self.obj.className = self.obj.className.replace(/(^| )fixed/,"");
+              self.isFixed = false;
+          }
+          else if (e.keyCode == '37') {
+             // left arrow
+             self._slideLeft();
+          }
+          else if (e.keyCode == '39') {
+             // right arrow
+             self._slideRight();
+          }
+        }
+      });
 
     },
 
@@ -128,6 +183,8 @@
 
     // slide Carousel one item to _L
     _slideLeft : function() {
+      if(this.obj.className.indexOf("preventDoubleTap") > -1)
+        return false
       // if index == 0, set to length, else index--
       if(this.slide_index == 0){
         this.slide_index = this.slide_length - 1;
@@ -139,6 +196,8 @@
 
     // slide Carousel one item to _R
     _slideRight : function() {
+      if(this.obj.className.indexOf("preventDoubleTap") > -1)
+        return false
       // if index == max, set to 0, else index++
       if(this.slide_index == this.slide_length - 1){
         this.slide_index = 0;
@@ -175,7 +234,7 @@
               startX,
               startY,
               dist,
-              threshold = 150, //required min distance traveled to be considered swipe
+              threshold = 50, //required min distance traveled to be considered swipe
               allowedTime = 400, // maximum time allowed to travel that distance
               elapsedTime,
               startTime;
@@ -194,12 +253,11 @@
       // });
 
       touchsurface.addEventListener('touchend', function(e){
-          console.log("touchend");
           var touchobj = e.changedTouches[0];
           dist = touchobj.pageX - startX; // get total dist traveled by finger while in contact with surface
           elapsedTime = new Date().getTime() - startTime; // get time elapsed
           // check that elapsed time is within specified, horizontal dist traveled >= threshold, and vertical dist traveled <= 100
-          var swipeBool = (elapsedTime <= allowedTime && Math.abs(dist) >= threshold && Math.abs(touchobj.pageY - startY) <= 100)
+          var swipeBool = (elapsedTime <= allowedTime && Math.abs(dist) >= threshold && Math.abs(touchobj.pageY - startY) <= 180)
 
           if(swipeBool)
             carousel._handleSwipe(dist);

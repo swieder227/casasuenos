@@ -25,6 +25,8 @@
 				$id = pll_get_post(get_page_by_title( 'Gallery' )->ID, 'es_MX');	
 			} elseif ($page == "contact") {
 				$id = pll_get_post(get_page_by_title( 'Contact' )->ID, 'es_MX');	
+			} elseif ($page == "privacy") {
+				$id = pll_get_post(get_page_by_title( 'Privacy Policy' )->ID, 'es_MS');
 			} else {
 				echo "improper page parameter in getLocalePageID()";
 			}	
@@ -51,6 +53,8 @@
 				$id = get_page_by_title( 'Gallery' )->ID;	
 			} elseif ($page == "contact") {
 				$id = get_page_by_title( 'Contact' )->ID;	
+			} elseif ($page == "privacy") {
+				$id = get_page_by_title( 'Privacy Policy' )->ID;
 			} else {
 				echo "improper page parameter in getLocalePageID()";
 			}
