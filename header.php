@@ -81,7 +81,7 @@
 		</button>
 		<div class="main-navigation main-navigation-sticky">
 			<div class="sticky-btn-reservations dash-sides font-sacramento"><a href="http://hotel1599.openhotel.com/results.cfm"><?php _e( 'reservations', 'casasuenos' );?></a></div>
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-sticky' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu-sticky', 'container_class' => 'menu-all-pages-container menu-all-pages-container--'.get_locale() ) ); ?>
 		</div>
 	</div>
 	<!-- #stickyhead -->
