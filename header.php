@@ -31,7 +31,18 @@
 <meta name="msapplication-TileColor" content="#da532c">
 <meta name="msapplication-TileImage" content="http://casasuenos.com/wp-content/themes/casasuenos/favicons/mstile-144x144.png">
 <meta name="theme-color" content="#ffffff">
-
+<script>
+	/* Test for flexbox supprt. If found, add class to DOM */
+	if( document.documentElement.style && 
+		document.documentElement.style.flex != undefined ||
+		document.documentElement.style.webkitFlex != undefined ||
+		document.documentElement.style.mozFlex != undefined ||
+		document.documentElement.style.msFlex != undefined ||
+		document.documentElement.style.oFlex != undefined ||
+		document.documentElement.style.boxDirection != undefined ){
+		document.documentElement.className += "supportsFlexbox";
+	}
+</script>
 <?php wp_head(); ?>
 </head>
 

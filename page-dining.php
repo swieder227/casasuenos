@@ -70,7 +70,7 @@ get_header(); ?>
 								<?php _e( 'Brunch:  8:00AM - 4:00PM', 'casasuenos' );?>
 							</div>
 						</div>
-						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/ParqueSuenos_BarGrill_BrunchMenu.pdf">Menu</a>
+						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/ParqueSuenos_BarGrill_BrunchMenu.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
 					</div>
 				</div>
 			</div>
@@ -87,15 +87,35 @@ get_header(); ?>
 						</p>
 						<div class="dining-pricing">
 							<div class="room-row room-row--header">
-								<?php _e( 'Open Daily:  5:00 PM - 10:00 PM', 'casasuenos' );?>
+								<?php _e( 'Open Daily:  5:00 PM - 10:-10 PM', 'casasuenos' );?>
 							</div>
 						</div>
-						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf">Menu</a>
+						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
 					</div>
 				</div>
 			</div>
 			<div class="border-wave"></div>
-			<div class="casa-row clear casa-row--dining4">
+			<div class="casa-row clear casa-row--dining4 casa-row--nopad">
+			    <div class="room-content casa-row clear">
+					<div class="casa-col--bg casa-col--40p"></div>
+					<div class="casa-col--text casa-col--right casa-col--60p">
+						<div class="room-title">
+							<span class="font-sacramento">Sunset Pier</span>
+						</div>
+						<p class="room-paragraph">
+							<?php _e( 'For a truly special experience, inquire about our sunset pier dinners. Available after 5pm at the end of our pier, enjoy a private evening of romance and a menu custom tailored to your desires. Reservations highly recommended.', 'casasuenos' );?>
+						</p>
+						<div class="dining-pricing">
+							<div class="room-row room-row--header">
+								<?php _e( 'Open Daily:  5:00 PM - 10:00 PM', 'casasuenos' );?>
+							</div>
+						</div>
+						<!--a class="btn-cta btn-cta--din-standalone" href=""><?php _e( 'Menu', 'casasuenos;')?></a-->
+					</div>
+				</div>
+			</div>
+			<div class="border-wave"></div>
+			<div class="casa-row clear casa-row--dining5">
 			    <div class="casa-col--bg"></div>
 			    <div class="casa-col--text casa-col--40p casa-col--minh20 casa-col--pattern-blue clear">
 			        <h2 class="home-header2 font-sacramento pdf-link"><?php _e( 'Ocean View Dining', 'casasuenos' );?></h2>

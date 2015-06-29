@@ -2,7 +2,7 @@
  * navigation.js
  *
  * Handles toggling the navigation menu for small screens and enables tab
- * support for dropdown menus.
+ * support for dropdown menus. Also tests for flexbox support.
  */
 ( function() {
 	var container, button, menu, links, subMenus;
@@ -78,6 +78,7 @@
 			self = self.parentElement;
 		}
 	}
+
 } )();
 
 /*
