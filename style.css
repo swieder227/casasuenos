@@ -1061,6 +1061,15 @@ a:active {
 }
 
 .main-navigation-sticky #primary-menu-sticky {
+	position: absolute;
+	top: 100px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding-bottom: 50px;
+}
+
+html.supportsFlexbox #primary-menu-sticky {
 	display: -webkit-flex; display: -ms-flexbox; display: flex;
 	-webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column;
 	-webkit-justify-content: space-around; -ms-flex-pack: distribute; justify-content: space-around;
@@ -1079,6 +1088,7 @@ a:active {
 }
 .sticky-btn-reservations {
 	font-size: 40px;
+	height: 100px;
 }
 
 @media screen and (max-width: 600px) {
@@ -1088,6 +1098,13 @@ a:active {
 	}
 	.sticky-btn-reservations {
 		font-size: 30px;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	html:not(.supportsFlexbox) #primary-menu-sticky li {
+		float: left;
+		width: 50%;
 	}
 }
 
@@ -1418,7 +1435,7 @@ object {
 	}
 }
 @media screen and (min-width: 551px) and (max-width: 920px) {
-	body.home .menu-all-pages-container {
+	body.home #site-navigation .menu-all-pages-container {
 		height: 473px !important;
 	}
 }
@@ -1431,8 +1448,14 @@ object {
 .page-topimg--active { background-image: url(imgs/bg_home_3.jpg); }
 .page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); background-position: 50% 0%;}
 .page-topimg--spa { background-image: url(imgs/bg_spa_1.jpg); }
-.page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); background-position: 50% 0%;}
-.page-topimg--events { background-image: url(imgs/bg_events.jpg); }
+.page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); background-position: 50% 30%;}
+@media screen and (max-width: 350px) { 
+	.page-topimg--wed { background-position: 50% 100%; background-size: 120% auto; background-color: #E4E5E9;} 
+}
+.page-topimg--events { background-image: url(imgs/bg_events.jpg); background-position: 50% 30%; }
+@media screen and (max-width: 600px) {
+	.page-topimg--events { background-position: 50% 0%; }
+}
 .page-topimg--gallery { background-image: url(imgs/bg_gallery.jpg); }
 .page-topimg--contact { background-image: url(imgs/bg_contact.jpg); }
 
