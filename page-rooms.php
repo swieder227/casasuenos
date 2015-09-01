@@ -80,7 +80,7 @@ get_header(); ?>
 					} elseif ($index == 2) { //serenity
 						$numSlides = 6;
 					} elseif ($index == 3) { // ocean king
-						$numSlides = 5;
+						$numSlides = 4;
 					} elseif ($index == 4) { // ocean double
 						$numSlides = 4;
 					} elseif ($index == 5) { // econ king

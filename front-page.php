@@ -23,6 +23,8 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<div class="border-wave"></div>
+
+			
 			<div class="casa-row casa-row--nopad clear" id="home-welcome">
 	        <div class="casa-col--bg"></div>
 	        <div class="casa-col--text casa-col--60p clear">

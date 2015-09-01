@@ -65,7 +65,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Contact-Specific
 # Footer
 # Carousel
-	## Carousel Slides
+## Carousel Slides
 
 /*--------------------------------------------------------------
 # Normalize
@@ -2407,6 +2407,7 @@ Placeholders
 	pointer-events: auto; /* blocks clicks on curtain when directly on image */
 	background-size: cover;
 	background-position: 50% 50%; 
+	background-repeat: no-repeat;
 }
 
 /*
@@ -2565,58 +2566,101 @@ Dots
 --------------------------------------------------------------*/
 
 /* Set Background Images */
-.carousel-main--1 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Pres-1.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Pres-2.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Pres-3.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Pres-4.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Pres-5.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Pres-6.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/Pres-7.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="7"] .carousel-img { background-image: url(imgs/rooms/Pres-8.gif); }
-.carousel-main--1 .carousel-item[data-slide-index="8"] .carousel-img { background-image: url(imgs/rooms/Pres-9.gif); }
+.carousel-main--1 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_1_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_2_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_3_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_4_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_5_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_6_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_7_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="7"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_8_sm.jpg);}
+.carousel-main--1 .carousel-item[data-slide-index="8"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_9_sm.jpg);}
+/**/
+.carousel-main--1.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_1.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_2.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_3.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_4.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_5.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_6.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_7.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="7"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_8.jpg); width: 1500px; height: 1000px;}
+.carousel-main--1.fixed .carousel-item[data-slide-index="8"] .carousel-img { background-image: url(imgs/rooms/Pres/Pres_9.jpg); width: 1500px; height: 1000px;}
 
-.carousel-main--2 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Serenity-1.jpg); }
-.carousel-main--2 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Serenity-2.jpg); }
-.carousel-main--2 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Serenity-3.jpg); }
-.carousel-main--2 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Serenity-4.jpg); }
-.carousel-main--2 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Serenity-5.jpg); }
-.carousel-main--2 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Serenity-6.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_1.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_2.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_3.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_4.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_5.jpg); }
+.carousel-main--2 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_6.jpg); }
+/**/
+.carousel-main--2.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_1.jpg); width: 680px; height: 451px;}
+.carousel-main--2.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_2.jpg); width: 680px; height: 451px;}
+.carousel-main--2.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_3.jpg); width: 680px; height: 451px;}
+.carousel-main--2.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_4.jpg); width: 680px; height: 451px;}
+.carousel-main--2.fixed .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_5.jpg); width: 680px; height: 451px;}
+.carousel-main--2.fixed .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Serenity/Serenity_6.jpg); width: 680px; height: 451px;}
 
-.carousel-main--3 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanKing-1.jpg); }
-.carousel-main--3 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanKing-2.jpg); }
-.carousel-main--3 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanKing-3.jpg); }
-.carousel-main--3 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanKing-4.jpg); }
-.carousel-main--3 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/OceanKing-5.jpg); }
 
-.carousel-main--4 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanDouble-1.jpg); }
-.carousel-main--4 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanDouble-2.jpg); }
-.carousel-main--4 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanDouble-3.jpg); }
-.carousel-main--4 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanDouble-4.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-1_sm.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-2_sm.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-3_sm.jpg); }
+.carousel-main--3 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-4_sm.jpg); }
+/**/
+.carousel-main--3.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-1.jpg); width: 1500px; height: 1000px;}
+.carousel-main--3.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-2.jpg); width: 1500px; height: 1000px;}
+.carousel-main--3.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-3_sm.jpg); width: 680px; height: 451px;}
+.carousel-main--3.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanKing/OceanKing-4_sm.jpg); width: 680px; height: 451px;}
 
-.carousel-main--5 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconomyKing-1.jpg); }
-.carousel-main--5 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconomyKing-2.jpg); }
-.carousel-main--5 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconomyKing-3.jpg); }
-.carousel-main--5 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconomyKing-4.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-1_sm.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-2_sm.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-3_sm.jpg); }
+.carousel-main--4 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-4_sm.jpg); }
+/**/
+.carousel-main--4.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-1.jpg); width: 1557px; height: 1011px;}
+.carousel-main--4.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-2.jpg); width: 1500px; height: 1000px;}
+.carousel-main--4.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-3.jpg); width: 1557px; height: 1011px;}
+.carousel-main--4.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/OceanView/OceanDouble-4_sm.jpg); width: 680px; height: 451px;}
 
-.carousel-main--6 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconDouble-1.jpg); }
-.carousel-main--6 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconDouble-2.jpg); }
-.carousel-main--6 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconDouble-3.jpg); }
-.carousel-main--6 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconDouble-4.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_01_low.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_02_low.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_03_low.jpg); }
+.carousel-main--5 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_04_low.jpg); }
+/**/
+.carousel-main--5.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_01_low.jpg); width: 680px; height: 451px; }
+.carousel-main--5.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_02_low.jpg); width: 680px; height: 451px; }
+.carousel-main--5.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_03_low.jpg); width: 680px; height: 451px; }
+.carousel-main--5.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconKing/EconomyKing_04_low.jpg); width: 680px; height: 451px; }
 
-.carousel-main--7 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/casa-1.jpg); }
-.carousel-main--7 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/casa-2.jpg); }
-.carousel-main--7 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/casa-3.jpg); }
-.carousel-main--7 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/casa-4.jpg); }
-.carousel-main--7 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/casa-5.gif); }
-.carousel-main--7 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/casa-6.gif); }
-.carousel-main--7 .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/casa-7.gif); }
+.carousel-main--6 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_1_sm.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_2_sm.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_3_sm.jpg); }
+.carousel-main--6 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_4_sm.jpg); }
+/**/
+.carousel-main--6.fixed .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_1_sm.jpg); width: 680px; height: 451px;}
+.carousel-main--6.fixed .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_2_sm.jpg); width: 680px; height: 451px;}
+.carousel-main--6.fixed .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_3_sm.jpg); width: 680px; height: 451px;}
+.carousel-main--6.fixed .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/EconDouble/EconDouble_4_sm.jpg); width: 680px; height: 451px;}
+
+.carousel-main--7 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_1_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_2_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_3_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_4_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_5_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_6_sm.jpg); }
+.carousel-main--7 .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_7_sm.jpg); }
+/**/
+.carousel-main--7 .carousel-item[data-slide-index="0"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_1_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="1"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_2_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="2"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_3_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="3"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_4_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="4"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_5_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="5"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_6_sm.jpg); width: 680px; height: 450px;}
+.carousel-main--7 .carousel-item[data-slide-index="6"] .carousel-img { background-image: url(imgs/rooms/Rtc/rtc_7_sm.jpg); width: 680px; height: 450px;}
 
 /* Set Max heights */
 .carousel-main.fixed .carousel-img {
-	width: 100%;
-	height: 100%;
-	max-width: 500px;
-	max-height: 400px;
+	max-width: 100%;
+	max-height: 100%;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%,-50%);
