@@ -90,7 +90,7 @@ get_header(); ?>
 								<?php _e( 'Open Daily:  11:00 AM - 9:00 PM', 'casasuenos' );?>
 							</div>
 						</div>
-						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Black_Cat_BBQ_and_Seafood_Grill.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
+						<a target="_blank" class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Black_Cat_BBQ_and_Seafood_Grill.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
 					</div>
 				</div>
 			</div>
