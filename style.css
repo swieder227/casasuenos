@@ -1788,6 +1788,7 @@ object {
 .casa-row--dining2 .casa-col--bg {
 	background-image: url(imgs/bg_dining_2.jpg);
 	width: 40%;
+	background-position: 90%;
 }
 .casa-row--dining3 .casa-col--bg {
 	background-image: url(imgs/bg_dining_3.jpg);

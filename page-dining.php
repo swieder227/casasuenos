@@ -39,7 +39,7 @@ get_header(); ?>
 					<p class="body-text body-text--dining2">
 						<b><?php _e( 'Parque de los Sueños Bar & Grill', 'casasuenos' );?></b>
 						<br/>
-						<b><?php _e( 'Rêves: Oceanfront Fusion Cusine', 'casasuenos' );?></b>
+						<b><?php _e( 'Black Cat BBQ', 'casasuenos' );?></b>
 					</p>
 					<p class="body-text body-text--dining3">
 						<?php _e( 'Happy Hour:', 'casasuenos' );?>
@@ -57,20 +57,20 @@ get_header(); ?>
 					<div class="casa-col--bg casa-col--40p"></div>
 					<div class="casa-col--text casa-col--right casa-col--60p">
 						<div class="room-title">
-							<span class="font-sacramento">Parque de los Sueños</span>&nbsp;<?php _e( 'BAR &amp;&nbsp;GRILL', 'casasuenos' );?>
+							<span class="font-sacramento">Breakfast</span>&nbsp;
 						</div>
 						<p class="room-paragraph">
-							<?php _e( 'provides the best breakfast and lunch on the island. Enjoy a meal and take in the breathtaking Caribbean waters that stretch from our rustic pier towards the shores of Cancún. A delectable brunch menu that mixes tapas plates, local classics, and traditional bar food with strong seafood influences.', 'casasuenos' );?>
+							<?php _e( 'is served until noon in paradise. Enjoy the morning and take in the breathtaking Caribbean waters that stretch from our rustic pier towards the shores of Cancún. A delectable breakfast menu that mixes local classics with strong seafood influences.', 'casasuenos' );?>
 						</p>
 						<div class="dining-pricing">
 							<div class="room-row room-row--header">
-								<?php _e( 'Open Daily:  8:00AM - 4:00PM', 'casasuenos' );?>
+								<?php _e( 'Served Daily:  8:00AM - NOON', 'casasuenos' );?>
 							</div>
-							<div class="room-row room-row--header">
+							<!-- <div class="room-row room-row--header">
 								<?php _e( 'Brunch:  8:00AM - 4:00PM', 'casasuenos' );?>
-							</div>
+							</div> -->
 						</div>
-						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/ParqueSuenos_BarGrill_BrunchMenu.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
+						<a target="_blank" class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/ParqueSuenos_Brunch_Menu.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
 					</div>
 				</div>
 			</div>
@@ -80,17 +80,17 @@ get_header(); ?>
 					<div class="casa-col--bg casa-col--40p"></div>
 					<div class="casa-col--text casa-col--right casa-col--60p">
 						<div class="room-title">
-							<span class="font-sacramento">Rêves</span>
+							<span class="font-sacramento">Black Cat BBQ</span>
 						</div>
 						<p class="room-paragraph">
-							<?php _e( 'is the newest culinary triumph of Ramon, the Head Chef for Casa de los Sueños. Sample incredible contemporary fusion plates with influences across the Caribbean, Yucatan, and beyond. Dishes are created with the finest ingredients, freshest seafood, and choicest cuts. The top spot to enjoy the evening ocean and lifestyle on the southern end of the island.', 'casasuenos' );?>
+							<?php _e( 'brings gourmet BBQ to the island. Our brisket, chicken, pork, and ribs are exquisitely smoked with zapote logs, giving each plate a rich, local flair. Rounded out with locally-sourced seafood and generous dinner salads. Black Cat is the top spot to enjoy the evening ocean and lifestyle on the southern end of the island.', 'casasuenos' );?>
 						</p>
 						<div class="dining-pricing">
 							<div class="room-row room-row--header">
-								<?php _e( 'Open Daily:  5:00 PM - 10:-10 PM', 'casasuenos' );?>
+								<?php _e( 'Open Daily:  11:00 AM - 9:00 PM', 'casasuenos' );?>
 							</div>
 						</div>
-						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Reves-Menus.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
+						<a class="btn-cta btn-cta--din-standalone" href="http://casasuenos.com/wp-content/themes/casasuenos/pdfs/Black_Cat_BBQ_and_Seafood_Grill.pdf"><?php _e( 'Menu', 'casasuenos;')?></a>
 					</div>
 				</div>
 			</div>
@@ -107,7 +107,7 @@ get_header(); ?>
 						</p>
 						<div class="dining-pricing">
 							<div class="room-row room-row--header">
-								<?php _e( 'Open Daily:  5:00 PM - 10:00 PM', 'casasuenos' );?>
+								<?php _e( 'Open Daily:  5:00 PM - 9:00 PM', 'casasuenos' );?>
 							</div>
 						</div>
 						<!--a class="btn-cta btn-cta--din-standalone" href=""><?php _e( 'Menu', 'casasuenos;')?></a-->
