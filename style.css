@@ -1446,7 +1446,7 @@ object {
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
 .page-topimg--trans { background-image: url(imgs/bg_trans_1.jpg); }
 .page-topimg--active { background-image: url(imgs/bg_home_3.jpg); }
-.page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); background-position: 50% 19.7%;}
+.page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); background-position: 49% 24.7%;}
 .page-topimg--spa { background-image: url(imgs/bg_spa_1.jpg); }
 .page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); background-position: 50% 30%;}
 @media screen and (max-width: 350px) { 
