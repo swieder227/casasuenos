@@ -34,13 +34,13 @@ get_header(); ?>
 			<div class="casa-row casa-row--nopad">
 				<div class="casa-col casa-col--text clear casa-col--100p">
 					<p class="body-text body-text--dining1">
-						<?php _e( 'At Casa de los Sueños, we have two great restaurants:', 'casasuenos' );?>
+						<?php _e( 'At Casa de los Sueños, join us for breakfast, lunch, and dinner.', 'casasuenos' );?>
 					</p>
-					<p class="body-text body-text--dining2">
+					<!-- <p class="body-text body-text--dining2">
 						<b><?php _e( 'Parque de los Sueños Bar & Grill', 'casasuenos' );?></b>
 						<br/>
 						<b><?php _e( 'Black Cat BBQ', 'casasuenos' );?></b>
-					</p>
+					</p> -->
 					<p class="body-text body-text--dining3">
 						<?php _e( 'Happy Hour:', 'casasuenos' );?>
 					</p>
