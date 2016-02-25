@@ -1446,7 +1446,7 @@ object {
 .page-topimg--amen { background-image: url(imgs/bg_amen_1.jpg); }
 .page-topimg--trans { background-image: url(imgs/bg_trans_1.jpg); }
 .page-topimg--active { background-image: url(imgs/bg_home_3.jpg); }
-.page-topimg--dining { background-image: url(imgs/bg_dining_1.jpg); background-position: 50% 0%;}
+.page-topimg--dining { background-image: url(imgs/bg_dining_1_new.jpg); background-position: 50% 0%;}
 .page-topimg.page-topimg--dining {
     background-position: 50% 29%;
 }
