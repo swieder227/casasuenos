@@ -600,7 +600,7 @@ textarea {
 	z-index: 9999;
 	background: rgba(101, 153, 192, 0.85);
 }
-@media screen and (min-width: 921px) {
+@media screen and (min-width: 1000px) {
 	#masthead {
 		position: fixed;
 	}
@@ -870,7 +870,7 @@ a:active {
   100% { opacity: 1; }
 }
 /* Styles on small*/
-@media screen and (max-width: 920px){
+@media screen and (max-width: 1000px){
 	.site-branding {
 		float: none;
 		margin:0 auto;
@@ -1130,8 +1130,11 @@ html.supportsFlexbox #primary-menu-sticky {
 	z-index: 100;
 }
 
-@media screen and (min-width: 970px) {
+@media screen and (min-width: 1000px) {
 	.header-special-btn {
+
+		right: auto;
+		left: 100%;
 		width: 120px;
 		height: 120px;
 	}
@@ -1457,7 +1460,7 @@ object {
 		min-height: 550px;
 	}
 }
-@media screen and (min-width: 551px) and (max-width: 920px) {
+@media screen and (min-width: 551px) and (max-width: 1000px) {
 	body.home #site-navigation .menu-all-pages-container {
 		height: 473px !important;
 	}

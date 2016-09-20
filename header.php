@@ -69,8 +69,9 @@
 				<!-- Additional Buttons -->
 				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="http://hotel1599.openhotel.com/results.cfm"><?php _e( 'reservations', 'casasuenos' );?></a></div>
 				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(getLocalePageID( 'rooms' )) ?>"><?php _e( 'rooms', 'casasuenos' );?></a></div>
+				<a class="header-special-btn" href="https://parque.webconnex.com/NewYearsEve?utm_source=casadelossuenos&utm_medium=Website&utm_campaign=CasaButtonClicks"></a>
 			</nav><!-- #site-navigation -->
-			<a class="header-special-btn" href="https://parque.webconnex.com/NewYearsEve?utm_source=casadelossuenos&utm_medium=Website&utm_campaign=CasaButtonClicks"></a>
+			
 		</div>
 	</header><!-- #masthead -->
 
