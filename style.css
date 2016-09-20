@@ -610,7 +610,7 @@ textarea {
 	position: relative;
 	height: 77px;
   padding: 12px 0;
-	max-width: 1024px;
+	max-width: 1110px;
 	margin:0 auto;
 }
 
@@ -870,7 +870,7 @@ a:active {
   100% { opacity: 1; }
 }
 /* Styles on small*/
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1110px){
 	.site-branding {
 		float: none;
 		margin:0 auto;
@@ -954,7 +954,7 @@ a:active {
 }
 
 /* Styles on !small*/
-@media screen and (min-width: 921px) {
+@media screen and (min-width: 1110px) {
 	.menu-toggle {
 		display: none;
 	}
@@ -1119,24 +1119,30 @@ html.supportsFlexbox #primary-menu-sticky {
 --------------------------------------------------------------*/
 .header-special-btn {
 	position: absolute;
-	top: -20px;
+	top: -15px;
 	right: 0;
-	width: 90px;
+	width: 110px;
 	height: 95px;
 	background-image: url(imgs/btn_nye.png);
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: 5px 100%;
+	background-position: 0px 100%;
 	z-index: 100;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1110px) {
 	.header-special-btn {
-
 		right: auto;
 		left: 100%;
 		width: 120px;
 		height: 120px;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.header-special-btn {
+		width: 90px;
+		height: 95px;
 	}
 }
 
@@ -1460,7 +1466,7 @@ object {
 		min-height: 550px;
 	}
 }
-@media screen and (min-width: 551px) and (max-width: 1000px) {
+@media screen and (min-width: 551px) and (max-width: 1110px) {
 	body.home #site-navigation .menu-all-pages-container {
 		height: 473px !important;
 	}

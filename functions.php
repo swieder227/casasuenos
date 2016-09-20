@@ -101,7 +101,7 @@ add_action( 'widgets_init', 'casasuenos_widgets_init' );
  * Enqueue scripts and styles.
  */
 function casasuenos_scripts() {
-	wp_enqueue_style( 'casasuenos-style', get_stylesheet_uri(), array(), '20160919', 'all' );
+	wp_enqueue_style( 'casasuenos-style', get_stylesheet_uri(), array(), '20160919a', 'all' );
 
 	wp_enqueue_style( 'font-sacramento', 'http://fonts.googleapis.com/css?family=Sacramento' );
 
