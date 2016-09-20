@@ -54,7 +54,7 @@ get_header(); ?>
 			    <div class="casa-col--bg"></div>
 			    <div class="casa-col--text casa-col--30p casa-col--pattern-yellow clear">
 			        <h2 class="home-header2 font-sacramento">Parque<span class="home-header2-sm">de los</span>Suenos</h2>
-			        <p class="home-paragraph home-paragraph-2"><?php _e('Ready for some fun? The Casa’s adventurous-side is Parque de los Suenos. Located on the lower part of the property, head to the Parque for island adventure. All hotel guests can access the main pool, swim-up bar, and private deck without cost. A 50% discount to the Parque is available for those who wish to engage in other water activities.', 'casasuenos' );?></p>
+			        <p class="home-paragraph home-paragraph-2"><?php _e('Ready for some fun? The Casa’s adventurous-side is Parque de los Sueños. Located on the lower part of the property, head to the Parque for island adventure. All hotel guests can access the main pool, swim-up bar, water activities, and private deck without cost. Food & beverage not included with complimentary park access.', 'casasuenos' );?></p>
 			        <a class="home-anchor font-sacramento" href="http://parquesuenos.com/" target="_blank"><?php _e( 'see more', 'casasuenos' );?></a>
 			    </div>
 			</div>
