@@ -32,6 +32,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Menus
 	### Small Menu
 	### Sticky Nav
+	### Header Special Button
 # Accessibility
 # Alignments
 # Clearings
@@ -1113,6 +1114,28 @@ html.supportsFlexbox #primary-menu-sticky {
 	display: none;
 }
 
+/*--------------------------------------------------------------
+### Header Special Button
+--------------------------------------------------------------*/
+.header-special-btn {
+	position: absolute;
+	top: -20px;
+	right: 0;
+	width: 90px;
+	height: 95px;
+	background-image: url(imgs/btn_nye.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: 5px 100%;
+	z-index: 100;
+}
+
+@media screen and (min-width: 970px) {
+	.header-special-btn {
+		width: 120px;
+		height: 120px;
+	}
+}
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1452,8 +1475,8 @@ object {
 }
 .page-topimg--spa { background-image: url(imgs/bg_spa_1.jpg); }
 .page-topimg--wed { background-image: url(imgs/bg_wed_1.jpg); background-position: 50% 30%;}
-@media screen and (max-width: 350px) { 
-	.page-topimg--wed { background-position: 50% 100%; background-size: 120% auto; background-color: #E4E5E9;} 
+@media screen and (max-width: 350px) {
+	.page-topimg--wed { background-position: 50% 100%; background-size: 120% auto; background-color: #E4E5E9;}
 }
 .page-topimg--events { background-image: url(imgs/bg_events.jpg); background-position: 50% 30%; }
 @media screen and (max-width: 600px) {
@@ -1784,7 +1807,7 @@ object {
 	width: 70%;
 }
 .casa-row--active3 .casa-col--bg {
-	background-image: url(imgs/bg_active_3.jpg); 
+	background-image: url(imgs/bg_active_3.jpg);
 	background-position: 70% 50%;
 }
 
@@ -2319,7 +2342,7 @@ Basic Carousel layout
     pointer-events: none; /* lets you click the curtain behind this */
 }
 
-/* 
+/*
 
 Animating carousel-items
 
@@ -2349,15 +2372,15 @@ Animating carousel-items
 @keyframes slideLeftOut {
     0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
     100% { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
-} 
+}
 @-webkit-keyframes slideRightIn {
     0%   { -webkit-transform: translateX(100%); transform: translateX(100%);}
     100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
-} 
+}
 @keyframes slideRightIn {
     0%   { -webkit-transform: translateX(100%); transform: translateX(100%);}
     100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
-} 
+}
 
 .carousel-item.prev {
     -webkit-animation-name: slideLeftOut;
@@ -2376,15 +2399,15 @@ Animating carousel-items
 @keyframes slideRightOut {
     0%   { -webkit-transform: translateX(0%); transform: translateX(0%);}
     100% { -webkit-transform: translateX(100%); transform: translateX(100%);}
-} 
+}
 @-webkit-keyframes slideLeftIn {
     0%   { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
     100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
-} 
+}
 @keyframes slideLeftIn {
     0%   { -webkit-transform: translateX(-100%); transform: translateX(-100%);}
     100% { -webkit-transform: translateX(0%); transform: translateX(0%);}
-} 
+}
 
 .carousel-item.prev.active {
     -webkit-animation-name: slideLeftIn;
@@ -2396,7 +2419,7 @@ Animating carousel-items
 }
 
 
-/* 
+/*
 
 Placeholders
 
@@ -2410,7 +2433,7 @@ Placeholders
 	right: 0;
 	pointer-events: auto; /* blocks clicks on curtain when directly on image */
 	background-size: cover;
-	background-position: 50% 50%; 
+	background-position: 50% 50%;
 	background-repeat: no-repeat;
 }
 

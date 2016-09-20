@@ -33,7 +33,7 @@
 <meta name="theme-color" content="#ffffff">
 <script>
 	/* Test for flexbox supprt. If found, add class to DOM */
-	if( document.documentElement.style && 
+	if( document.documentElement.style &&
 		document.documentElement.style.flex != undefined ||
 		document.documentElement.style.webkitFlex != undefined ||
 		document.documentElement.style.mozFlex != undefined ||
@@ -70,6 +70,7 @@
 				<div class="header-btn-extra header-btn-reservations font-sacramento"><a class="dash-sides" href="http://hotel1599.openhotel.com/results.cfm"><?php _e( 'reservations', 'casasuenos' );?></a></div>
 				<div class="header-btn-extra header-btn-rooms font-sacramento"><a class="dash-sides" href="<?php echo get_permalink(getLocalePageID( 'rooms' )) ?>"><?php _e( 'rooms', 'casasuenos' );?></a></div>
 			</nav><!-- #site-navigation -->
+			<a class="header-special-btn" href="https://parque.webconnex.com/NewYearsEve?utm_source=casadelossuenos&utm_medium=Website&utm_campaign=CasaButtonClicks"></a>
 		</div>
 	</header><!-- #masthead -->
 
