@@ -101,7 +101,7 @@ add_action( 'widgets_init', 'casasuenos_widgets_init' );
  * Enqueue scripts and styles.
  */
 function casasuenos_scripts() {
-	wp_enqueue_style( 'casasuenos-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'casasuenos-style', get_stylesheet_uri(), array(), '20160919', 'all' );
 
 	wp_enqueue_style( 'font-sacramento', 'http://fonts.googleapis.com/css?family=Sacramento' );
 
@@ -144,4 +144,3 @@ require get_template_directory() . '/inc/jetpack.php';
  * Function lookup for page->ID based on language
  */
 require get_template_directory() . '/localebased_page_ids.php';
-
